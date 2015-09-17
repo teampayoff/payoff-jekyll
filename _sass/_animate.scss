@@ -1,0 +1,91 @@
+/* CSS Animations
+ * Don't forget to add vendor prefixes! */
+
+.m-scene {
+  .scene_element {
+    animation-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-fill-mode: both;
+  }
+  .scene_element--fadeInUp {
+    animation-name: fadeInUp;
+  }
+  .scene_element--fadeIn {
+    animation-name: fadeIn;
+  }
+  .back-arrow {
+    animation-name: fadeInDown;
+    animation-delay: 0.5s;
+  }
+  .content {
+    animation-name: fadeInUp;
+    animation-delay: 0.2s;
+  }
+  &.is-exiting .back-arrow {
+    animation-direction: alternate-reverse;
+    animation-name: fadeOut;
+    animation-duration: 0.2s;
+  }
+  &.is-exiting .scene_element {
+    animation-direction: alternate-reverse;
+    //animation-name: fadeOutUp
+    animation-duration: 0.3s;
+  }
+}
+
+/* Keyframes */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

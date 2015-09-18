@@ -1,0 +1,11 @@
+//
+// Layout
+//
+.compact {
+  @include make-col();
+  
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')) {
+    @include make-col-span(8);
+    @include make-col-push(2);
+  }
+}

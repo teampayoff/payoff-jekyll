@@ -2,7 +2,7 @@
   <div class="container">
 
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/logo-type-b.svg" alt="{{ site.title }}" />
+      <img src="{{ site.baseurl }}/assets/logo-full-color.png" alt="{{ site.title }}" />
     </a>
 
     <ul class="nav nav-pills pull-right">
@@ -10,15 +10,20 @@
       Pages ordered in nav by weight number in front-matter
       Ordered left to right starting with "1"
     {% endcomment %}
-    {% for weight in (1..10) %}
-      {% for p in site.pages %}
-        {% if p.weight == weight %}
-        <li class="nav-item{% if p.url == page.url %} active{% endif %}">
-          <a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endif %}
+
+
+      {% for weight in (1..10) %}
+        {% for p in site.pages %}
+          {% if p.parent == 'index' %}
+            {% if p.weight == weight %}
+            <li class="nav-item{% if p.url == page.url %} active{% endif %}">
+              <a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
+            </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
+
     <li class="nav-item">
       <button class="btn btn-primary" type="signin">Sign In</button>
     </li>

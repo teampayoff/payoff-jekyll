@@ -2,8 +2,11 @@
 layout: page
 title: Company
 permalink: /company/
+parent: index
+subnav: company
 weight: 3
 ---
+
 
 <section class="p-b-md">
 	<p class="lead">Payoff is here to help you on your journey to achieve your dreams. No matter how you got here, we will help you all along the way. We'll walk with you down any path you choose, adding guidance when you need it. Maybe your path needs you to pay off your credit cards, or maybe it needs inspiration from others' stories. We are here for you. We're not a bank. We're people building personal products with a purpose: helping you achieve your dreams and empowering you to live your best life.</p>

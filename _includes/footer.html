@@ -1,57 +1,131 @@
 <footer class="footer">
   <div class="container">
+
     <div class="row">
+      <!-- PAYOFF BRANDED -->
+      <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+        <a class="navbar-brand " href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/logo-type-g.svg" alt="{{ site.title }}" />
+        </a>
+      </ul>
 
-    <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-      <a class="navbar-brand " href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/assets/logo-type-g.svg" alt="{{ site.title }}" />
-      </a>
-    </ul>
 
-    <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-      <h4 class="nav-item "><a class="nav-link" href="/why-it-matters/">Why it Matters</a></h4>
-      <li>Mission</li>
-      <li>Stories</li>
-      <li>Testimonials</li>
-      <li>Life</li>
-    </ul>
+      <!-- WHY IT MATTERS COLUMN -->
+       <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+            <li>
+              <h4 class=""><a href="/payoff-products/">Why It Matters</a></h4>
+            </li>
+            {% for weight in (1..10) %}
+              {% for p in site.pages %}
+                {% if p.parent == 'why-it-matters' %}
+                  {% if p.weight == weight %}
+                  <li class="{% if p.url == page.url %} active{% endif %}">
+                    <a href="{{ p.url }}">{{ p.title }}</a>
+                  </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            <li>
+              <a href="#">Life</a>
+            </li>
+        </ul>
 
-    <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-      <h4 class="nav-item "><a class="nav-link" href="/payoff-products/">Payoff Products</a></h4>
-      <li>The Payoff Loan</li>
-      <li>Payoff Guide</li>
-      <li>The Dream Card</li>
-      <li>Payoff Invest</li>
-      <li>Tips & Tricks</li>
-      <li>Financial Personality</li>
-    </ul>
 
-    <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-      <h4 class="nav-item "><a class="nav-link" href="/company/">Company</a></h4>
-      <li>Our History</li>
-      <li>Culture</li>
-      <li>Team</li>
-      <li>Board & Investors</li>
-      <li>Careers</li>
-      <li>Interships</li>
-      <li>Press</li>
-    </ul>
+      <!-- PAYOFF PRODUCTS COLUMN -->
+        <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+            <li>
+              <h4><a href="/payoff-products/">Payoff Products</a></h4>
+            </li>
+            {% for weight in (1..10) %}
+              {% for p in site.pages %}
+                {% if p.parent == 'payoff-products' %}
+                  {% if p.weight == weight %}
+                  <li class="{% if p.url == page.url %} active{% endif %}">
+                    <a href="{{ p.url }}">{{ p.title }}</a>
+                  </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+        </ul>
+      <!-- 
+      <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+        <h4 class="nav-item "><a class="nav-link" href="/payoff-products/">Payoff Products</a></h4>
+        <li>The Payoff Loan</li>
+        <li>Payoff Guide</li>
+        <li>The Dream Card</li>
+        <li>Payoff Invest</li>
+        <li>Tips & Tricks</li>
+        <li>Financial Personality</li>
+      </ul> -->
 
-    <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-      <h4 class="nav-item "><a class="nav-link" href="/support/">Support</a></h4>
-      <li>FAQ</li>
-      <li>Contact Us</li>
-      <li>Talk Now</li>
-    </ul>
 
-    <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-      <h4 class="nav-item "><a class="nav-link" href="#">Legal</a></h4>
-      <li>FAQ</li>
-      <li>Contact Us</li>
-      <li>Talk Now</li>
-    </ul>
+      <!-- COMPANY COLUMN -->
+        <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+            <li>
+              <h4 ><a href="/company/">Company</a></h4>
+            </li>
+            {% for weight in (1..10) %}
+              {% for p in site.pages %}
+                {% if p.parent == 'company' %}
+                  {% if p.weight == weight %}
+                  <li class="{% if p.url == page.url %} active{% endif %}">
+                    <a href="{{ p.url }}">{{ p.title }}</a>
+                  </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+        </ul>
+
+
+      <!-- SUPPORT COLUMN -->
+       <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+            <li>
+              <h4 class=""><a href="/support/">Support</a></h4>
+            </li>
+            {% for weight in (1..10) %}
+              {% for p in site.pages %}
+                {% if p.parent == 'support' %}
+                  {% if p.weight == weight %}
+                  <li class="{% if p.url == page.url %} active{% endif %}">
+                    <a href="{{ p.url }}">{{ p.title }}</a>
+                  </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            <li>
+              <a href="#">Talk Now</a>
+            </li>
+        </ul>
+
+
+      <!-- LEGAL COLUMN -->
+       <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
+            <li>
+              <h4 class=""><a href="/legal/">Legal</a></h4>
+            </li>
+            {% for weight in (1..10) %}
+              {% for p in site.pages %}
+                {% if p.parent == 'legal' %}
+                  {% if p.weight == weight %}
+                  <li class="{% if p.url == page.url %} active{% endif %}">
+                    <a href="{{ p.url }}">{{ p.title }}</a>
+                  </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+        </ul>
+
 
     </div>
+    <!-- / ROW -->
+
+
+
     <div class="row foot-lower">
       <div class="col-sm-12 col-md-10 col-md-offset-2">
         <img class="trust" src="{{ site.baseurl }}/assets/trust.png" alt="trust" />
@@ -61,8 +135,10 @@
         <p class="fine-print">
           © Copyright 2009-2015. Payoff Inc. All rights reserved.
         </p>
-
       </div>
     </div>
+    <!-- / ROW -->
+
+
   </div>
 </footer>

@@ -2,8 +2,11 @@
 layout: page
 title: Payoff Products
 permalink: /payoff-products/
-weight: 2
+parent: index
+subnav: payoff-products
+weight: 1
 ---
+
 
 <section class="p-b-md">
 	<p class="lead">Payoff is a next generation financial services company, designing products that help people pay off their credit cards faster and save money. Through a combination of understanding who people are and what motivates them with our unwavering desire to see customers succeed, we are committed to the mission of restoring humanity to financial services. </p>

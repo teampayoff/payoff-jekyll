@@ -2,6 +2,7 @@
 layout: page
 title: Our History
 permalink: /company/history/
+heading: Company
 parent: company
 subnav: company
 weight: 1
@@ -10,5 +11,26 @@ weight: 1
 
 
 <section class="p-b-md">
-	<p class="lead">History Content</p>
+	<h2>Why the Balloons?</h2>
+	<p>
+	Glad you asked. Hi, I’m Scott Saunders, and I started Payoff to restore humanity and bring a little
+	levity to financial services. With the balloons, I wanted a symbol for the freedom from debt I want
+	everyone to have, my optimism for the future of the industry, and the celebrations we’ll have when you
+	achieve your Payoff goals!
+	</p>
+	<p>
+	So you may say, “Scott. Aren't balloons a little silly? Working to pay off my debt is a serious and
+	heavy burden.” And to that I’d respond,
+	</p>
+	<p>
+	“Paying off debt is serious business, but we need to keep a lighthearted perspective on the journey and
+	constantly remind ourselves that we’ll be traveling lighter when our debt is gone.”
+	</p>
+	<p>
+	Remember, hard work pays off, but you can’t do this alone. I know that, together, we can form a cause-centered community and achieve a future free of debt, because if you tie enough balloons together, then you can lift up anything and reach heights you never thought were possible.
+	</p>
+	<p>
+	<em><strong>Scott Saunders</strong><br>
+	CEO and Founder, Payoff</em>
+	</p>
 </section>

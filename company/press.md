@@ -2,6 +2,7 @@
 layout: page
 title: Press
 permalink: /company/press/
+heading: Company
 parent: company
 subnav: company
 weight: 6

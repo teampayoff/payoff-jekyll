@@ -2,6 +2,7 @@
 layout: page
 title: Company
 permalink: /company/
+heading: Company
 parent: index
 subnav: company
 weight: 3

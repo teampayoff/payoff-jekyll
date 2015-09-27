@@ -2,6 +2,7 @@
 layout: page
 title: Payoff Products
 permalink: /payoff-products/
+heading: Payoff Products
 parent: index
 subnav: payoff-products
 weight: 1

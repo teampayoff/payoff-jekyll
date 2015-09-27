@@ -2,6 +2,7 @@
 layout: page
 title: Support
 permalink: /support/
+heading: Support
 parent: index
 subnav: support
 weight: 4

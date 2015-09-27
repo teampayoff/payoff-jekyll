@@ -2,6 +2,7 @@
 layout: page
 title: The Dream Card
 permalink: /payoff-products/card/
+heading: The Dream Card
 parent: payoff-products
 subnav: payoff-products
 weight: 2

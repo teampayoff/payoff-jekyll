@@ -2,12 +2,311 @@
 layout: page
 title: Terms of Use
 permalink: /legal/terms-of-use/
+heading: Terms and Conditions of Use
 parent: legal
-subnav: legal
 weight: 1
 ---
 
 
 <section class="p-b-md">
-	<p class="lead">TOS Content</p>
+
+	<p><em>Last Updated: October 2014</em></p>
+
+	<hr>
+
+	<p>
+	  PLEASE CAREFULLY REVIEW THESE TERMS AND CONDITIONS OF USE BEFORE USING THIS SITE. ANY USE OF THIS WEBSITE CREATES A BINDING AGREEMENT TO COMPLY WITH THESE TERMS AND CONDITIONS. IF YOU DO NOT AGREE TO THESE TERMS, YOU SHOULD EXIT THIS SITE IMMEDIATELY.
+	</p>
+
+	<h4>User Agreement</h4>
+	<p>
+	  The following are terms of a legal agreement (the "Agreement") between you and Payoff, Inc. ("Payoff") that sets forth the terms and conditions for your use of this website (the "Site"). The Site is owned and operated by Payoff. This Site is being provided to you expressly subject to this Agreement. By accessing, browsing and/or using the Site, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement and to comply with all applicable laws and regulations. The terms and conditions of this Agreement form an essential basis of the bargain between you and Payoff. Your use of the Site indicates your acceptance of these Terms of Use whether as someone who just browses the Site, “Non-registered User”, or as someone who has registered on the Site, “Registered User”. If you do not agree with any of these Terms and Conditions of Use, do not use the Site. Additional terms and conditions apply to loan applicants and borrowers.
+	</p>
+
+	<p>
+	Payoff reserves the right to amend this Agreement at any time and will notify you of any such changes by posting the revised Agreement on the Site. You should check this Agreement periodically for changes. All changes shall be effective upon posting. Your continued use of the Site after any change to this Agreement constitutes your agreement to be bound by any such changes. Payoff may terminate, suspend, change, or restrict access to all or any part of this Site without notice or liability.
+	</p>
+
+	<h4>Your Personal Information</h4>
+
+	<p>
+	  Payoff takes very seriously the protection of your personal information. For details on how Payoff protects your personal information, please read Payoff’s Privacy Policy (<a href="/legal/privacy-policy/">https://www.payoff.com/legal/privacy-policy/</a>), which is incorporated into this Agreement. As with this Agreement, Payoff’s Privacy Policy may be updated from time to time at Payoff’s sole discretion.
+	</p>
+
+	<h4>Limitations of Use</h4>
+
+	<p>
+	  The copyright in all material on this Site, including without limitation the text, data, articles, design, source code, software, photos, images and other information (collectively the "Content"), is held by Payoff and is protected by U.S. and International copyright laws and treaties. You agree that the Content may not be copied, reproduced, distributed, republished, displayed, posted or transmitted in any form or by any means, including, but not limited to, electronic, mechanical, photocopying, recording, or otherwise, without the express prior written consent of Payoff. You acknowledge that the Content is and shall remain the property of Payoff. You may not modify, participate in the sale or transfer of, or create derivative works based on any Content, in whole or in part. The use of the Content on any other Site, including by linking or framing, or in any networked computer environment for any purpose, is prohibited without Payoff's prior written approval. You also may not, without Payoff's express written permission, "mirror" any material contained on this Site on any other server. Any unauthorized use of any Content on this Site may violate copyright laws, trademark laws, the laws of privacy and publicity, and communications statutes and regulations.
+	</p>
+
+	<p>
+	  You agree to use the Content and Site only for lawful purposes. You are prohibited from any use of the Content or Site that would constitute a violation of any applicable law, regulation, rule or ordinance of any nationality, state, or locality or of any international law or treaty, or that could give rise to any civil or criminal liability. Any unauthorized use of the Site, including but not limited to unauthorized entry into Payoff's systems, misuse of passwords, or misuse of any information posted on the Site is strictly prohibited. Payoff makes no claims concerning whether the Content may be downloaded or is appropriate for use outside of the United States. If you access this Site from outside of the United States, you are solely responsible for ensuring compliance with the laws of your specific jurisdiction. Your eligibility for particular products or services is subject to final determination by Payoff.            
+	</p>
+
+	<p>
+	  Members of the Payoff community must be U.S. residents that are 18 years of age or older. Children under the age of 18 are not eligible to participate in the offerings on this website.     
+	</p>
+
+	<h4>Content and Use Restrictions</h4>
+
+	<p>
+	  You agree not to post, upload, publish, display, transmit, share, store or otherwise make or attempt to make publicly available on the Site or on any other website, or in any email, blog, forum, medium or other communication of any kind, any private or personally identifiable information of any Payoff member or other third party, including, without limitation, names, addresses, phone numbers, email addresses, Social Security numbers, driver's license numbers, or bank account or credit card numbers, whether or not such private or personally identifiable information is displayed on or ascertainable from the Site, or obtained or obtainable from sources unrelated to the Site (such as from a "Google® search" or other online research).
+	You agree to not to use the Site or any Content to upload, post, email, transmit or otherwise make available any unsolicited or unauthorized advertising, promotional materials, "junk mail," "spam," "chain letters," "pyramid schemes," or any other form of commercial or non-commercial solicitation or bulk communications of any kind to any Payoff member or other third party. 
+	</p>
+
+	<h4>Trademarks</h4>
+
+	<p>
+	  Payoff (including the Payoff logo), Payoff.com, and all related logos (collectively the "Payoff Trademarks") are trademarks or service marks of Payoff. Other company, product, and service names and logos used and displayed on this Site may be trademarks or service marks owned by Payoff or others. Nothing on this Site should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any of the Payoff Trademarks displayed on this Site, without our prior written permission in each instance. You may not use, copy, display, distribute, modify or reproduce any of the trademarks found on the Site unless in accordance with written authorization by us. Payoff prohibits use of any of the Payoff Trademarks as part of a link to or from any site unless establishment of such a link is approved in writing by us in advance. For matters related to press, social media, and other types of publicity, please refer to our usage guide and instructions located at <a href="/press/">www.payoff.com/press/</a>. Any questions concerning any Payoff Trademarks, or whether any mark or logo is a Payoff Trademark, should be referred to Payoff.
+	</p>
+
+	<h4>Third-Party Information Providers</h4>
+
+	<p>
+	  As part of delivering the products and services on the Site, Payoff works with certain third party providers who may directly or through access to other third party sites provide Payoff with a Registered User’s personal information (“Personal Information”) with such user’s permission (“Third Party Provider”). By using certain services of Payoff, if applicable, you authorize Payoff and Third Party Provider to access third party websites designated by you, on your behalf, to retrieve information requested by you, and to register for accounts requested by you. For all purposes hereof, you hereby grant Payoff and Third Party Provider a limited power of attorney, and you hereby appoint Payoff and Third Party Provider as your true and lawful attorney-in-fact and agent, with full power of substitution and re-substitution, for you and in your name, place and stead, in any and all capacities, to access third party websites, servers or documents, retrieve information, and use your information, all as described above, with the full power and authority to do and perform each and every act and thing requisite and necessary to be done in connection with such activities, as fully to all intents and purposes as you might or could do in person. YOU ACKNOWLEDGE AND AGREE THAT WHEN PAYOFF OR THIRD PARTY PROVIDER ACCESSES AND RETRIEVES INFORMATION FROM THIRD PARTY WEBSITES, PAYOFF AND THIRD PARTY PROVIDER ARE ACTING AS YOUR AGENT, AND NOT THE AGENT OR ON BEHALF OF THE THIRD PARTY. You agree that third party account providers shall be entitled to rely on the foregoing authorization, agency and power of attorney granted by you. You understand and agree that the service is not endorsed or sponsored by any third party account providers accessible through the Payoff service unless otherwise stated by such third party account provider.
+	</p>
+
+	<p>
+	  You understand and acknowledge that Payoff does not review any Personal Information provided by Third Party Providers or third party sites in any way including, but not limited to, accuracy, timeliness, or non-infringement. Further, you understand and acknowledge that Payoff has no control of the delivery of Personal Information provided by Third Party Providers or third party websites, and as such, cannot be held responsible for technical and other problems which impact delivery, accuracy, timeliness, deletion or other issues with Personal Information. 
+	</p>
+
+	<h4>Links to Third-Party Sites</h4>
+
+	<p>
+	  This site may contain links to websites controlled, owned, and operated by third parties (the "Third-Party Sites"). Payoff cannot control and has no responsibility for the accuracy or availability of information provided on the Third-Party Sites. You acknowledge that use of any Third-Party Sites is governed by the terms of use for those websites, and not by this Agreement. Links to Third-Party Sites do not constitute an endorsement or recommendation by Payoff of such sites or the content, products, advertising or other materials presented on such sites, but are only for your convenience and you access them at your own risk. Such Third-Party Sites may have a privacy policy different from that of Payoff and the Third-Party Site may provide less security than this Site. Payoff is not responsible for the content of any third-party websites, nor does Payoff make any warranties or representations, express or implied, regarding the content (or the accuracy of such content) on any third-party websites, and Payoff shall have no liability of any nature whatsoever for any failure of products or services offered or advertised at such sites or otherwise.            
+	</p>
+
+	<h4>Accurate Information</h4>
+
+	<p>
+	  You agree to provide true, accurate, current and complete information about yourself and your accounts (as applicable) and you agree to not misrepresent your identity or your account information. You agree to keep your account information up to date and accurate.            
+	</p>
+
+	<h4>Behavioral Insights</h4>
+
+	<p>
+	  From time to time, alone or in connection with a product or service, Payoff may ask questions related to your behavior, personality, and other things related to how you think and feel. This information allows us to complete, in specific or in aggregate, psychological assessments. The assessment results and feedback are developed to meet professional standards and as such are subject to the limitations of psychological science. The information we collect from these assessments will be used to help us provide you more focused customer service, individualized web experiences, more accurate risk management and better financial education. Your assessment may use procedures that are not evident to you. Your feedback may differ from your own perceptions of yourself.            
+	</p>
+
+	<p>
+	  Payoff may retain and use, subject to the terms of our Privacy Statement, information collected from you. Payoff will not share information associated with you with any unaffiliated or non-contracted third parties unless Payoff (i) has your permission; (ii) concludes that it is required by law or has a good faith belief that access, preservation or disclosure of such information is reasonably necessary to protect the rights, property or safety of Payoff, our users or the public; or (iii) provides such information in anonymous or aggregated form provided that such information is not identifiable of you.            
+	</p>
+
+	<p>
+	  You agree that Payoff may identify you on the Site and in marketing materials to identify you as a user of the Site, and you hereby grant us a non-exclusive, royalty-free license to do so on our Site or in any media now or later developed in connection with any marketing, promotion or advertising of the Site. Payoff will request your consent prior to identifying you specifically. However, we reserve the right to use the information provided to us in connection with your use of the Site and product or services of Payoff, while not specifically identifying, in the manner described above.            
+	</p>
+
+	<p>
+	  If you provide suggestions, ideas, feedback, or recommendations to us regarding our Site, products or services (Feedback), we will be free to use, disclose, reproduce, license or otherwise distribute, and exploit such Feedback as we see fit, without any obligation or restriction of any kind to you.            
+	</p>
+
+	<h4>Your Content</h4>
+
+	<p>
+	  In order to use the certain products or services of the Site, you may provide data including, but not limited to, usernames and passwords. In addition, we welcome your comments and postings on the Site, where allowed. However, you agree to grant a worldwide, perpetual, fully transferable, non-revocable, royalty free, sub-licensable license for the unrestricted use of any comments, feedback, notes, messages, ideas, suggestions, materials, or other data (collectively, "Content") provided to Payoff or Third Party Providers. Your submission of any such Content shall constitute an assignment to Payoff and associated Third Party Providers of all worldwide rights, titles and interests in all copyrights and other intellectual property rights in the Content. Payoff will be entitled to use, reproduce, disclose, publish and distribute any material you submit for any purpose whatsoever, without restriction and without compensating you in any way. For this reason, we ask that you not provide any Content that you do not wish to assign to us, including any confidential information or any original creative materials such as stories, product ideas, computer code or original artwork.            
+	</p>
+
+	<h4>Posting Requirements</h4>
+
+	<p>
+	  As part of the Payoff platform, you may have the ability to either submit or post Content to Payoff or on the Site. You understand and acknowledge Payoff may use vendors or other third party providers to manage such Content. As part of your ability to submit or post Content to Payoff or on the Site you agree to follow certain restrictions and regulations.
+	</p>
+
+	<p>
+	  You represent and warrant that your Content does not and will not infringe the rights of any third party, including without limitation any intellectual property rights, rights of publicity, rights of personality, rights of privacy, rights to payment of royalties, or any other rights of third parties or result in any tort, material injury, material damage or material harm to any third party. You acknowledge any Content you post to a public portion of the Site will be accessible by other users of the Site. Further, you hereby grant each user of the Site an unfettered, nonexclusive right to access any of your posted Content and utilize such Content in any way permitted by the Site.
+	</p>
+
+	<p>
+	  You represent that none of your Content contains or links to any content, web page or site that contains any: 
+	</p>
+
+	<ul>
+	  <li>nudity, pornography, or other sexual or adult material; </li>
+	  <li>hate propaganda or material that encourages or promotes illegal activity or violence;</li>
+	  <li>
+	      content that violates or infringes in any way upon the statutory, common law, or proprietary rights of others, including but not limited to copyrights, trademark rights, patents, or any other third party intellectual property, contract, privacy, or publicity rights;
+	  </li>
+	  <li>
+	      personal identifying information about any user of the Site without said user’s written permission; 
+	  </li>
+	  <li>material that promotes or utilizes software or services designed to deliver unsolicited email;</li>
+	  <li>material that violates any local, state, or national law, rule or regulation;</li>
+	  <li>viruses, Trojan horses, worms, time bombs, cancel bots or other similar harmful or deleterious programming routines; or</li>
+	  <li>
+	      misrepresentations or material that is threatening, abusive, harassing, defamatory, obscene, profane, indecent, or otherwise objectionable, offensive, or harmful, as determined at Payoff’s sole discretion.
+	  </li>
+	</ul>
+
+	<p>
+	 <em>Notice and Procedure for Making Claims of Copyright Infringement</em>
+	</p>
+
+	<p>
+	 Payoff and its affiliates respect the intellectual property of others. If you believe that your work has been copied in a way that constitutes copyright infringement, please provide Payoff the written information specified below. Please note that this procedure is exclusively for notifying Payoff and its affiliates that your copyrighted material may have been infringed.
+	</p>
+
+	<ol>
+	  <li>A description of the copyrighted work that you claim has been infringed upon;</li>
+	  <li>A description of where the material that you claim is infringing is located on the Site;</li>
+	  <li>A statement by you that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;</li>
+	  <li>Your address, telephone number, and e-mail address;</li>
+	  <li>A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.</li>
+	  <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest;</li>
+	</ol>
+
+	<p>
+	  You can send your notice of claim of copyright infringement to:
+	</p>
+	 
+	<p class="text-indent-40">
+	  Payoff, Inc.<br>
+	  ATTN: Compliance<br>
+	  3200 Park Center Drive<br>
+	  Suite 800<br>
+	  Costa Mesa, CA 92626 
+	</p>
+
+	<h4>Correction of Errors and Inaccuracies; Limitations on Quantity; Risk of Loss</h4>
+	<p>
+	  The information on the Site may contain typographical errors or inaccuracies and may not be complete or current. We therefore reserve the right to correct any errors, inaccuracies or omissions and to change or update information at any time without prior notice (including after you have registered for the Payoff service). Please note that such errors, inaccuracies or omissions may relate to your ability to use the Payoff service.). We apologize for any inconvenience this may cause you.
+	</p>
+
+	<h4>Disclaimer and Limitation of Liability as to the Site</h4>
+
+	<p>
+	  The Site is operated by Payoff, Inc. on an "as is," "as available" basis, without representations or warranties of any kind. To the full extent permitted by law, Payoff disclaims any and all representations and warranties, express or implied, with respect to the Site and its contents, whether express, implied, or statutory, including, but not limited to, warranties of title, merchantability and fitness for a particular purpose or use.
+	</p>
+
+	<p>
+	  Without limiting the foregoing, Payoff does not represent or warrant that the information on the Site is accurate, complete, reliable, useful, timely or current or that the Site will operate without interruption or error.
+	</p>
+	  
+	<p>
+	  Without limiting the foregoing, Payoff does not represent or warrant that the Site, including the server that makes it available, are free of viruses or other harmful components, or that the Site or the technology that makes it available, are immune to hacker activity, electronic or non-electronic tampering, computer crime, or theft.            
+	</p>
+
+	<p>
+	  Payoff does not endorse nor make any warranties or representations about the options or other service or data you may access, download or use as a result of the use of the information contained on the Site, or about any website you may access through the Site. Links to other sites are provided for convenience only. You need to make your own decisions regarding your interactions or communications with any other website. You acknowledge that Payoff is not responsible for the operation of or content located on or through any such other website.            
+	</p>
+
+	<p>
+	  Payoff makes no representation that content provided on the Site is applicable or appropriate for use in locations outside of the United States.
+	</p>
+
+	<p>
+	  Payoff assumes no risk or responsibility for your use of any of the content provided on the Site.
+	</p>
+
+	<h4>Financial Advice</h4>
+
+	<p>
+	  Payoff, neither through Payoff products or services nor otherwise, does NOT provide legal, tax, investment or insurance advice. Payoff provides information you may use at your sole discretion in your financial goals and pursuits. You are solely responsible for making any financial decisions or implementing any financial strategy or plan. You should consider consulting your legal, financial, or tax professional regarding your specific situation.
+
+	</p>
+
+	<h4>Limitation of Liability</h4>
+
+	<p>
+	  UNDER NO CIRCUMSTANCES, SHALL PAYOFF OR ANY OF ITS EMPLOYEES, DIRECTORS, OFFICERS, AGENTS, VENDORS OR SUPPLIERS BE LIABLE FOR ANY DIRECT OR INDIRECT LOSSES OR DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OF OR INABILITY TO USE THE SITE.
+	</p>
+
+	<p>
+	  THIS IS A COMPREHENSIVE LIMITATION OF LIABILITY THAT APPLIES TO ALL LOSSES AND DAMAGES OF ANY KIND (WHETHER GENERAL, SPECIAL, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, LOSS OF DATA, INCOME OR PROFITS), WHETHER IN CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, EVEN IF AN AUTHORIZED REPRESENTATIVE OF PAYOFF.COM HAS BEEN ADVISED OF OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES.
+	</p>
+
+	<p>
+	  IF YOU ARE DISSATISFIED WITH THE SITE OR ANY CONTENT ON THE SITE, OR WITH THESE TERMS AND CONDITIONS, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE. YOU ACKNOWLEDGE, BY YOUR USE OF THE SITE, THAT YOUR USE OF THE SITE IS AT YOUR SOLE RISK.
+	</p>
+
+	<p>
+	  APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OF LIABILITY SET FORTH ABOVE, SO THIS LIMITATION OF LIABILITY MAY NOT APPLY TO YOU. IF ANY PART OF THIS LIMITATION ON LIABILITY IS FOUND TO BE INVALID OR UNENFORCEABLE FOR ANY REASON, THEN THE AGGREGATE LIABILITY OF PAYOFF UNDER SUCH CIRCUMSTANCES FOR LIABILITIES THAT OTHERWISE WOULD HAVE BEEN LIMITED SHALL NOT EXCEED ONE HUNDRED DOLLARS ($100). 
+	</p>
+
+	<h4>Indemnification</h4>
+
+	<p>
+	  You agree to indemnify and hold harmless Payoff from and against any and all claims, losses, expenses, demands or liabilities, including attorneys' fees and costs, incurred by Payoff in connection with any claim by a third party (including any intellectual property claim) arising out of (i) materials and content you submit to, post to or transmit through the Site, or (ii) your use of the Site in violation of this Agreement or in violation of any applicable law. You further agree that you will cooperate fully in the defense of any such claims. Payoff reserves the right, at their own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, and you shall not in any event settle any such claim or matter without the written consent of Payoff. You further agree to indemnify and hold harmless Payoff from any claim arising from a third party's use of information or materials of any kind that you post to the Site.
+	</p>
+
+	<h4>Monitoring of the Site</h4>
+
+	<p>
+	  Payoff has no obligation to monitor the Site; however, you acknowledge and agree that Payoff has the right to monitor the Site electronically from time to time and to disclose any information as necessary or appropriate to satisfy any law, regulation or other governmental request, to operate the Site, or to protect itself or other users of the Site.
+	</p>
+
+	<h4>Availability</h4>
+
+	<p>
+	  This Site is not intended for distribution to, or use by, any person or entity in any jurisdiction or country where such distribution or use would be contrary to applicable law or regulation. By offering this Site and Content no distribution or solicitation is made by Payoff to any person to use the Site or Content in jurisdictions where the provision of the Site and/or Content is prohibited by law.
+	</p>
+
+	<h4>Registration Acceptance Policy</h4>
+
+	<p>
+	  Your receipt of an electronic or other form of registration confirmation does not signify our acceptance of your registration. Payoff reserves the right at any time after receipt of your registration information to accept or decline your registration for the Payoff Service for any reason. 
+	</p>
+
+	<h4>Termination</h4>
+
+	<p>
+	  This Agreement is effective until terminated by Payoff. Payoff may terminate this Agreement at any time without notice, or suspend or terminate your access and use of the Site at any time, with or without cause, in Payoff's absolute discretion and without notice. The following provisions of this Agreement shall survive termination of your use or access to the Site: the sections concerning Indemnification, Disclaimer of Warranties, Limitation of Liability, Waiver, Applicable Law and Dispute Resolution, and General Provisions, and any other provision that by its terms survives termination of your use or access to the Site.
+	</p>
+
+	<h4>Waiver</h4>
+
+	<p>
+	  Failure by Payoff to enforce any of its rights under this Agreement shall not be construed as a waiver of those rights or any other rights in any way whatsoever.
+	</p>
+
+	<h4>Applicable Law and Dispute Resolution</h4>
+
+	<p>
+	  This Agreement and all other aspects of your use of the Site shall be governed by and construed in accordance with the laws of the United States and, to the extent applicable, to the laws of the State of California, without regard to its conflict of laws rules. You agree that you will notify Payoff in writing of any claim or dispute concerning or relating to the Site and the information or services provided through it, and give Payoff a reasonable period of time to address it BEFORE bringing any legal action, either individually, as a class member or representative, or as a private attorney general, against Payoff. 
+	</p>
+
+	<h4>Enforcement of Terms of Use</h4>
+
+	<p>
+	  By accessing and using the Site, you agree that your access to and use of the Site is subject to these Terms of Use, as well as all applicable laws, as governed and interpreted pursuant to the laws of the State of California, United States of America. 
+	</p>
+
+	<h4>Other Agreements</h4>
+
+	<p>
+	  This Agreement shall be subject to any other agreements you have entered into with Payoff. 
+	</p>
+
+	<h4>Additional Terms</h4>
+
+	<p>
+	  Certain sections or pages on the Site may contain separate terms and conditions of use, which are in addition to the terms and conditions of this Agreement. In the event of a conflict, the additional terms and conditions will govern for those sections or pages. 
+	</p>
+
+	<h4>Severability</h4>
+
+	<p>
+	  If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall be enforced to the fullest extent possible, and the remaining provisions of the Agreement shall remain in full force and effect. 
+	</p>
+
+	<h4>General Provisions</h4>
+
+	<p>
+	  This Agreement supersedes any previous Terms of Use Agreement to which you and Payoff may have been bound. This Agreement will be binding on, inure to the benefit of, and be enforceable against the parties and their respective successors and assigns. Neither the course of conduct between parties nor trade practice shall act to modify any provision of the Agreement. All rights not expressly granted herein are hereby reserved. Headings are for reference purposes only and in no way define, limit, construe or describe the scope or extent of such section. 
+	</p>
+
+	<h4>Contacting Us</h4>
+
+	<p>
+	  If you have questions regarding the Agreement or the practices of Payoff, please contact us by e-mail at <a href="mailto:%63%6f%6d%70%6c%69%61%6e%63%65@%70%61%79%6f%66%66.%63%6f%6d">compliance@payoff.com</a> or by regular mail at:
+	</p>
+	  
+	<p class="text-indent-40">
+	  Payoff, Inc.<br>
+	  ATTN: Compliance<br>
+	  3200 Park Center Drive, STE 800<br>
+	  Costa Mesa, CA 92626             
+	</p>        
+
+
+
 </section>

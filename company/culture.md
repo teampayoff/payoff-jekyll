@@ -2,6 +2,7 @@
 layout: page
 title: Culture
 permalink: /company/culture/
+heading: Company
 parent: company
 subnav: company
 weight: 4

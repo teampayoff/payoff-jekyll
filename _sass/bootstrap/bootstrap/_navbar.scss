@@ -14,6 +14,7 @@
   padding: ($navbar-padding-vertical * 0.5) ($navbar-padding-horizontal * 1.75);
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
+  transition: border-color 0.2s $cubic;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -195,7 +196,7 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: $navbar-padding-horizontal;
+  //margin-right: $navbar-padding-horizontal;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
@@ -396,10 +397,10 @@
 // Alternate navbars
 // --------------------------------------------------
 
-// Naked navbar
+// Default navbar
 .navbar-naked {
-  background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
+  // background-color: white;
+  // border-color: $navbar-default-border;
 
   .navbar-brand {
     color: $navbar-default-brand-color;
@@ -429,7 +430,7 @@
       &:hover,
       &:focus {
         color: $navbar-default-link-active-color;
-        //background-color: $navbar-default-link-active-bg;
+        background-color: $navbar-default-link-active-bg;
       }
     }
     > .disabled > a {
@@ -453,10 +454,10 @@
     }
   }
 
-  .navbar-collapse,
-  .navbar-form {
-    border-color: $navbar-default-border;
-  }
+  // .navbar-collapse,
+  // .navbar-form {
+  //   border-color: $navbar-default-border;
+  // }
 
   // Dropdown menu items
   .navbar-nav {
@@ -501,6 +502,17 @@
     }
   }
 
+.navbar-right {
+  .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include breakpoint(md) {
+    .nav-item {
+      padding-left: ($navbar-padding-horizontal * 1.5);
+    }
+  }
+}
 
   // Links in navbars
   //
@@ -639,8 +651,10 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .nav-item {
-    padding-left: ($navbar-padding-horizontal * 1.5);
+  @include breakpoint(md) {
+    .nav-item {
+      padding-left: ($navbar-padding-horizontal * 1.5);
+    }
   }
 }
 

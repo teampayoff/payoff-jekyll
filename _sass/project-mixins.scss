@@ -21,3 +21,12 @@
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }
+
+
+@mixin prefix-property($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}

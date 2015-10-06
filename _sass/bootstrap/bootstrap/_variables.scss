@@ -20,7 +20,10 @@ $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
-
+$brand-pink:                #f61f89 !default;
+$brand-orange:              #fe7f0e !default;
+$brand-green:               #7bc732 !default;
+$brand-navy:                #002882 !default;
 
 
 // Spacing
@@ -894,3 +897,9 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+
+
+
+
+$cubic: cubic-bezier(0.215, 0.61, 0.355, 1)

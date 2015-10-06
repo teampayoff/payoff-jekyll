@@ -1,112 +1,101 @@
+
 {% if page.subnav == "company" %}
+
 	<ul class="nav nav-tabs m-b-md">
-	    {% for weight in (1..10) %}
-	      {% for p in site.pages %}
-	      	{% if p.parent == 'company' %}
-		        {% if p.weight == weight %}
-		        <li class="nav-item">
-		          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
-		        </li>
-		        {% endif %}
-	      	{% endif %}
-	      {% endfor %}
-	    {% endfor %}
+    {% for weight in (1..10) %}
+      {% for p in site.pages %}
+      	{% if p.parent == 'company' %}
+	        {% if p.weight == weight %}
+	        <li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+	          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+	        </li>
+	        {% endif %}
+      	{% endif %}
+      {% endfor %}
+    {% endfor %}
 	</ul>
-{% endif %}
 
+{% elsif page.subnav == "payoff-products" %}
 
-
-{% if page.subnav == "payoff-products" %}
 	<ul class="nav nav-tabs m-b-md">
-	    {% for weight in (1..10) %}
-	      {% for p in site.pages %}
-	      	{% if p.parent == 'payoff-products' %}
-		        {% if p.weight == weight %}
-		        <li class="nav-item">
-		          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
-		        </li>
-		        {% endif %}
-	      	{% endif %}
-	      {% endfor %}
-	    {% endfor %}
+		{% for weight in (1..10) %}
+			{% for p in site.pages %}
+				{% if p.parent == 'payoff-products' %}
+					{% if p.weight == weight %}
+					<li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+	          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+	        </li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	</ul>
-{% endif %}
 
+{% elsif page.subnav == "why-it-matters" %}
 
-
-{% if page.subnav == "why-it-matters" %}
 	<ul class="nav nav-tabs m-b-md">
-	    {% for weight in (1..10) %}
-	      {% for p in site.pages %}
-	      	{% if p.parent == 'why-it-matters' %}
-		        {% if p.weight == weight %}
-		        <li class="nav-item">
-		          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
-		        </li>
-		        {% endif %}
-	      	{% endif %}
-	      {% endfor %}
-	    {% endfor %}
+		{% for weight in (1..10) %}
+			{% for p in site.pages %}
+				{% if p.parent == 'why-it-matters' %}
+					{% if p.weight == weight %}
+					<li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+	          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+	        </li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	</ul>
-{% endif %}
 
+{% elsif page.subnav == "support" %}
 
-
-{% if page.subnav == "support" %}
 	<ul class="nav nav-tabs m-b-md">
-	    {% for weight in (1..10) %}
-	      {% for p in site.pages %}
-	      	{% if p.parent == 'support' %}
-		        {% if p.weight == weight %}
-		        <li class="nav-item">
-		          <a class="nav-link{% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
-		        </li>
-		        {% endif %}
-	      	{% endif %}
-	      {% endfor %}
-	    {% endfor %}
-        <li class="nav-item">
-          <a class="nav-link" href="#">Talk now</a>
-        </li>
+		{% for weight in (1..10) %}
+			{% for p in site.pages %}
+				{% if p.parent == 'support' %}
+					{% if p.weight == weight %}
+					<li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+	          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+	        </li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+		<li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+			<a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">Talk now</a>
+		</li>
 	</ul>
-{% endif %}
 
+{% elsif page.subnav == "legal" %}
 
-
-{% if page.subnav == "legal" %}
 	<ul class="nav nav-tabs m-b-md">
-	    {% for weight in (1..10) %}
-	      {% for p in site.pages %}
-	      	{% if p.parent == 'legal' %}
-		        {% if p.weight == weight %}
-		        <li class="nav-item">
-		          <a class="nav-link{% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
-		        </li>
-		        {% endif %}
-	      	{% endif %}
-	      {% endfor %}
-	    {% endfor %}
+		{% for weight in (1..10) %}
+			{% for p in site.pages %}
+				{% if p.parent == 'legal' %}
+					{% if p.weight == weight %}
+					<li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+	          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+	        </li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	</ul>
-{% endif %}
 
+{% elsif page.subnav == "loan" %}
 
-
-
-
-{% if page.subnav == "loan" %}
 	<ul class="nav nav-tabs m-b-md">
-	    {% for weight in (1..10) %}
-	      {% for p in site.pages %}
-	      	{% if p.parent == 'loan' %}
-		        {% if p.weight == weight %}
-		        <li class="nav-item">
-		          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
-		        </li>
-		        {% endif %}
-	      	{% endif %}
-	      {% endfor %}
-	    {% endfor %}
+		{% for weight in (1..10) %}
+			{% for p in site.pages %}
+				{% if p.parent == 'loan' %}
+					{% if p.weight == weight %}
+					<li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+	          <a class="nav-link {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+	        </li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
 	</ul>
+
 {% endif %}
-
-

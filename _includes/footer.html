@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
-
     <div class="row">
+
       <!-- PAYOFF BRANDED -->
       <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
         <a class="navbar-brand " href="{{ site.baseurl }}/">
@@ -9,124 +9,106 @@
         </a>
       </ul>
 
-
       <!-- WHY IT MATTERS COLUMN -->
        <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-            <li>
-              <h4 class=""><a href="/payoff-products/">Why It Matters</a></h4>
-            </li>
-            {% for weight in (1..10) %}
-              {% for p in site.pages %}
-                {% if p.parent == 'why-it-matters' %}
-                  {% if p.weight == weight %}
-                  <li class="{% if p.url == page.url %} active{% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                  </li>
-                  {% endif %}
+          <li>
+            <h4 class=""><a href="/payoff-products/">Why It Matters</a></h4>
+          </li>
+          {% for weight in (1..10) %}
+            {% for p in site.pages %}
+              {% if p.parent == 'why-it-matters' %}
+                {% if p.weight == weight %}
+                <li>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
                 {% endif %}
-              {% endfor %}
+              {% endif %}
             {% endfor %}
-            <li>
-              <a href="#">Life</a>
-            </li>
+          {% endfor %}
+          <li>
+            <a href="#">Life</a>
+          </li>
         </ul>
-
 
       <!-- PAYOFF PRODUCTS COLUMN -->
         <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-            <li>
-              <h4><a href="/payoff-products/">Payoff Products</a></h4>
-            </li>
-            {% for weight in (1..10) %}
-              {% for p in site.pages %}
-                {% if p.parent == 'payoff-products' %}
-                  {% if p.weight == weight %}
-                  <li class="{% if p.url == page.url %} active{% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                  </li>
-                  {% endif %}
+          <li>
+            <h4><a href="/payoff-products/">Payoff Products</a></h4>
+          </li>
+          {% for weight in (1..10) %}
+            {% for p in site.pages %}
+              {% if p.parent == 'payoff-products' %}
+                {% if p.weight == weight %}
+                <li>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
                 {% endif %}
-              {% endfor %}
+              {% endif %}
             {% endfor %}
+          {% endfor %}
         </ul>
-      <!-- 
-      <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-        <h4 class="nav-item "><a class="nav-link" href="/payoff-products/">Payoff Products</a></h4>
-        <li>The Payoff Loan</li>
-        <li>Payoff Guide</li>
-        <li>The Dream Card</li>
-        <li>Payoff Invest</li>
-        <li>Tips & Tricks</li>
-        <li>Financial Personality</li>
-      </ul> -->
-
 
       <!-- COMPANY COLUMN -->
         <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-            <li>
-              <h4 ><a href="/company/">Company</a></h4>
-            </li>
-            {% for weight in (1..10) %}
-              {% for p in site.pages %}
-                {% if p.parent == 'company' %}
-                  {% if p.weight == weight %}
-                  <li class="{% if p.url == page.url %} active{% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                  </li>
-                  {% endif %}
+          <li>
+            <h4 ><a href="/company/">Company</a></h4>
+          </li>
+          {% for weight in (1..10) %}
+            {% for p in site.pages %}
+              {% if p.parent == 'company' %}
+                {% if p.weight == weight %}
+                <li>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
                 {% endif %}
-              {% endfor %}
+              {% endif %}
             {% endfor %}
+          {% endfor %}
         </ul>
-
 
       <!-- SUPPORT COLUMN -->
        <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-            <li>
-              <h4 class=""><a href="/support/">Support</a></h4>
-            </li>
-            {% for weight in (1..10) %}
-              {% for p in site.pages %}
-                {% if p.parent == 'support' %}
-                  {% if p.weight == weight %}
-                  <li class="{% if p.url == page.url %} active{% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                  </li>
-                  {% endif %}
+          <li>
+            <h4 class=""><a href="/support/">Support</a></h4>
+          </li>
+          {% for weight in (1..10) %}
+            {% for p in site.pages %}
+              {% if p.parent == 'support' %}
+                {% if p.weight == weight %}
+                <li>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
                 {% endif %}
-              {% endfor %}
+              {% endif %}
             {% endfor %}
-            <li>
-              <a href="#">Talk Now</a>
-            </li>
+          {% endfor %}
+          <li>
+            <a href="#">Talk Now</a>
+          </li>
         </ul>
-
 
       <!-- LEGAL COLUMN -->
        <ul class="col-xs-12 col-sm-4 col-md-2 col-lg-2 foot-col">
-            <li>
-              <h4 class=""><a href="/legal/">Legal</a></h4>
-            </li>
-            {% for weight in (1..10) %}
-              {% for p in site.pages %}
-                {% if p.parent == 'legal' %}
-                  {% if p.weight == weight %}
-                  <li class="{% if p.url == page.url %} active{% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                  </li>
-                  {% endif %}
+          <li>
+            <h4 class=""><a href="/legal/">Legal</a></h4>
+          </li>
+          {% for weight in (1..10) %}
+            {% for p in site.pages %}
+              {% if p.parent == 'legal' %}
+                {% if p.weight == weight %}
+                <li>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
                 {% endif %}
-              {% endfor %}
+              {% endif %}
             {% endfor %}
+          {% endfor %}
         </ul>
 
 
-    </div>
-    <!-- / ROW -->
-
-
-
+    </div><!-- / ROW -->
     <div class="row foot-lower">
+
       <div class="col-sm-12 col-md-10 col-md-offset-2">
         <img class="trust" src="{{ site.baseurl }}/assets/trust.png" alt="trust" />
         <p class="fine-print">
@@ -136,9 +118,7 @@
           © Copyright 2009-2015. Payoff Inc. All rights reserved.
         </p>
       </div>
-    </div>
-    <!-- / ROW -->
 
-
+    </div><!-- / ROW -->
   </div>
 </footer>

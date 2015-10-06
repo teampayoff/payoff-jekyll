@@ -1,15 +1,20 @@
 ---
 layout: default
 ---
-<div class="page compact m-t-lg ">
+<div class="container m-y-lg">
 
-	<header class="post-header m-t-md">
-		<h1 class="display-4">{{ page.heading }}</h1>
-	</header>
+	<div class="col-md-8 col-md-offset-2">
 
-	{% include subnavs.html %}
+		<header class="post-header m-t-md">
+			<h1 class="display-4">{{ page.heading }}</h1>
+		</header>
 
-	<div class="page-content">
-		{{ content }}
+		{% include subnavs.html %}
+
+		<div class="page-content">
+			{{ content }}
+		</div>
+
 	</div>
+
 </div>

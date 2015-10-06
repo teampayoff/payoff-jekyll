@@ -11,10 +11,8 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  padding: ($navbar-padding-vertical * 0.5) ($navbar-padding-horizontal * 1.75);
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
-  transition: border-color 0.2s $cubic;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -164,7 +162,7 @@
 
 .navbar-brand {
   float: left;
-  //padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  padding: $navbar-padding-vertical $navbar-padding-horizontal;
   font-size: $font-size-large;
   line-height: $line-height-computed;
   height: $navbar-height;
@@ -176,13 +174,12 @@
 
   > img {
     display: block;
-    height: 100%;
   }
 
   @media (min-width: $grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
-      // margin-left: -$navbar-padding-horizontal;
+      margin-left: -$navbar-padding-horizontal;
     }
   }
 }
@@ -196,7 +193,7 @@
 .navbar-toggle {
   position: relative;
   float: right;
-  //margin-right: $navbar-padding-horizontal;
+  margin-right: $navbar-padding-horizontal;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
@@ -271,8 +268,7 @@
     margin: 0;
 
     > li {
-      //float: left;
-      display: inline-block;
+      float: left;
       > a {
         padding-top:    $navbar-padding-vertical;
         padding-bottom: $navbar-padding-vertical;
@@ -398,152 +394,8 @@
 // --------------------------------------------------
 
 // Default navbar
-.navbar-naked {
-  // background-color: white;
-  // border-color: $navbar-default-border;
-
-  .navbar-brand {
-    color: $navbar-default-brand-color;
-    &:hover,
-    &:focus {
-      color: $navbar-default-brand-hover-color;
-      background-color: $navbar-default-brand-hover-bg;
-    }
-  }
-
-  .navbar-text {
-    color: $navbar-default-color;
-  }
-
-  .navbar-nav {
-    > li > a {
-      color: $navbar-default-link-color;
-
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-disabled-color;
-        background-color: $navbar-default-link-disabled-bg;
-      }
-    }
-  }
-
-  .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
-    &:hover,
-    &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
-    }
-    .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
-    }
-  }
-
-  // .navbar-collapse,
-  // .navbar-form {
-  //   border-color: $navbar-default-border;
-  // }
-
-  // Dropdown menu items
-  .navbar-nav {
-    // Remove background color from open dropdown
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $navbar-default-link-active-bg;
-        color: $navbar-default-link-active-color;
-      }
-    }
-
-    @media (max-width: $grid-float-breakpoint-max) {
-      // Dropdowns get custom display when collapsed
-      .open .dropdown-menu {
-        > li > a {
-          color: $navbar-default-link-color;
-          &:hover,
-          &:focus {
-            color: $navbar-default-link-hover-color;
-            background-color: $navbar-default-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-default-link-active-color;
-            background-color: $navbar-default-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-default-link-disabled-color;
-            background-color: $navbar-default-link-disabled-bg;
-          }
-        }
-      }
-    }
-  }
-
-.navbar-right {
-  .nav-link {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @include breakpoint(md) {
-    .nav-item {
-      padding-left: ($navbar-padding-horizontal * 1.5);
-    }
-  }
-}
-
-  // Links in navbars
-  //
-  // Add a class to ensure links outside the navbar nav are colored correctly.
-
-  .navbar-link {
-    color: $navbar-default-link-color;
-    &:hover {
-      color: $navbar-default-link-hover-color;
-    }
-  }
-
-  .btn-link {
-    color: $navbar-default-link-color;
-    &:hover,
-    &:focus {
-      color: $navbar-default-link-hover-color;
-    }
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-disabled-color;
-      }
-    }
-  }
-}
-
-// Default navbar
 .navbar-default {
-  background-color: white;
+  background-color: $navbar-default-bg;
   border-color: $navbar-default-border;
 
   .navbar-brand {
@@ -598,10 +450,10 @@
     }
   }
 
-  // .navbar-collapse,
-  // .navbar-form {
-  //   border-color: $navbar-default-border;
-  // }
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-default-border;
+  }
 
   // Dropdown menu items
   .navbar-nav {
@@ -646,17 +498,6 @@
     }
   }
 
-.navbar-right {
-  .nav-link {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @include breakpoint(md) {
-    .nav-item {
-      padding-left: ($navbar-padding-horizontal * 1.5);
-    }
-  }
-}
 
   // Links in navbars
   //

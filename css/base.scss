@@ -4,8 +4,14 @@
 @charset "utf-8";
 
 @import
-        //"bootstrap-4/bootstrap",
-        "project-mixins",
-        "bootstrap/bootstrap",
-        "project-flamingo"
+        "bootstrap/bootstrap/variables", //custom variables
+        "bootstrap/bootstrap", //bootstrap files
+        "project-styles/custom-mixins",
+        "project-styles/custom-bootstrap/type", //bootstrap overrides
+        "project-styles/custom-bootstrap/navbar",
+        "project-styles/custom-bootstrap/navs",
+        "project-styles/custom-bootstrap/panels",
+        "project-styles/custom-bootstrap/utilities-spacing",
+        "project-styles/homepage",
+        "project-styles/base"
 ;

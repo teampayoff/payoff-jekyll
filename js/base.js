@@ -4,7 +4,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 300) {
+        if (scroll >= 175) {
             header.removeClass('navbar-naked').addClass("navbar-default");
         } else {
             header.removeClass("navbar-default").addClass('navbar-naked');

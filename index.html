@@ -4,7 +4,7 @@ layout: home
 
 
 <!-- HERO -->
-<div class="container-fluid m-b-lg">
+<div class="container-hero container-fluid m-b-lg">
 
 	<section class="row hero hero-home text-center">
 
@@ -18,7 +18,7 @@ layout: home
 	<!-- OUR PRODUCTS -->
 	<section class="row">
 		<div class="panel-group thumb-panel-group thumb-panel-group-stories">
-			<div class="panel panel-thumb col-sm-12 col-md-4">
+			<div class="panel panel-thumb col-xs-12 col-sm-4 col-md-4">
 		    <div class="panel-thumb-inner" >
 					<span class="thumb-upper">
 						<h2 class="p-b-md">Remove Credit</br>Card Balances</h2>
@@ -33,7 +33,7 @@ layout: home
 					<div class="thumb-bkg" style="background-image: url({{ site.baseurl }}/assets/past-story.png);"></div>
 		    </div>
 			</div>
-			<div class="panel panel-thumb col-sm-12 col-md-4">
+			<div class="panel panel-thumb col-xs-12 col-sm-4 col-md-4">
 				<div class="panel-thumb-inner" >
 					<span class="thumb-upper">
 						<h2 class="p-b-md">Manage your</br>Everyday Spending</h2>
@@ -48,7 +48,7 @@ layout: home
 					<div class="thumb-bkg" style="background-image: url({{ site.baseurl }}/assets/present-story.png);"></div>
 		    </div>
 			</div>
-			<div class="panel panel-thumb col-sm-12 col-md-4">
+			<div class="panel panel-thumb col-xs-12 col-sm-4 col-md-4">
 				<div class="panel-thumb-inner" >
 					<span class="thumb-upper">
 						<h2 class="p-b-md">Plan for</br>Future Savings</h2>
@@ -97,10 +97,10 @@ layout: home
 		    </li>
 		  </ul>
 			{% endcomment %}
-
-			<div class="thumb-panel-group thumb-panel-group-difference" role="tablist">
-				<div role="presentation" class="panel-thumb col-sm-12 col-md-6 active">
-					<a href="#fpq" aria-controls="fpq" role="tab" data-toggle="tab" class="panel-thumb-inner">
+			<ul class="thumb-panel-group thumb-panel-group-difference" role="tablist">
+				<li role="presentation" class="panel-thumb col-xs-6 col-sm-6 col-md-6 active">
+					<a href="#fpq" aria-controls="fpq" role="tab" data-toggle="tab" >
+						<div class="panel-thumb-inner"></div>
 						<div class="thumb-text-center">
 							<span>
 								<h6>Understand</h6>
@@ -108,18 +108,20 @@ layout: home
 							</span>
 						</div>
 					</a>
-				</div>
-				<div role="presentation" class="panel-thumb col-sm-12 col-md-6">
-					<a  href="#stories" aria-controls="stories" role="tab" data-toggle="tab" class="panel-thumb-inner">
+				</li>
+				<li role="presentation" class="panel-thumb col-xs-6 col-sm-6 col-md-6">
+					<a  href="#stories" aria-controls="stories" role="tab" data-toggle="tab">
+
 						<div class="thumb-text-center">
 							<span>
 								<h6>The Stories</h6>
 				    		<h3>We’re in this to</br>better human lives</h3>
 							</span>
 						</div>
+						<div class="panel-thumb-inner"></div>
 					</a>
-				</div>
-			</div>
+				</li>
+			</ul>
 
 		  <!-- Tab panes -->
 		  <div class="tab-content">

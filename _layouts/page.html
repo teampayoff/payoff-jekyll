@@ -1,13 +1,23 @@
 ---
 layout: default
 ---
-<div class="container p-y-xl">
+
+<div class="container-hero container-fluid">
+
+	<section class="row hero hero-page text-center">
+
+		<span class="hero-copy">
+			<!-- <h1>Introduce Your Dreams to Your Life</h1> -->
+			<h1>{{ page.heading }}</h1>
+		</span>
+
+	</section>
+
+</div>
+
+<div class="container p-b-xl">
 
 	<div class="col-md-8 col-md-offset-2">
-
-		<header class="post-header m-t-md">
-			<h1 class="display-4">{{ page.heading }}</h1>
-		</header>
 
 		{% include subnavs.html %}
 

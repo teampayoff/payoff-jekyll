@@ -4,14 +4,19 @@
 @charset "utf-8";
 
 @import
-        "bootstrap/bootstrap/variables", //custom variables
-        "bootstrap/bootstrap", //bootstrap files
+        //custom variables
+        "project-styles/custom-bootstrap/variables",
+        //bootstrap files
+        "bootstrap/bootstrap",
         "project-styles/custom-mixins",
-        "project-styles/custom-bootstrap/type", //bootstrap overrides
+        //bootstrap overrides
+        "project-styles/custom-bootstrap/type",
         "project-styles/custom-bootstrap/navbar",
         "project-styles/custom-bootstrap/navs",
         "project-styles/custom-bootstrap/panels",
         "project-styles/custom-bootstrap/utilities-spacing",
+        //custom styles
         "project-styles/homepage",
+        "project-styles/type",
         "project-styles/base"
 ;

@@ -1,0 +1,29 @@
+h1, .h1 {
+  margin-top: $line-height-computed;
+  margin-bottom: ($line-height-computed / 2);
+  font-weight: 200 !important;
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+h2, .h2,
+h3, .h3 {
+  margin-top: $line-height-computed;
+  margin-bottom: ($line-height-computed / 2);
+  font-weight: 100 !important;
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+h6, .h6 {
+  font-size: $font-size-h5;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: ($font-size-h5 * 0.1);
+}

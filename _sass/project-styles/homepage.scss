@@ -51,12 +51,14 @@
   margin: 0;
 }
 
+// THUMB PANEL VARIABLES
 $stories-panel-height: 60vh;
 $stories-panel-max-height: 60vw;
 $difference-panel-height: 20vh;
 $difference-panel-max-height: 20vw;
 $panel-hover-offset: 1em;
 
+// THUMB PANEL GROUP MASTER
 .thumb-panel-group {
   position: relative;
   margin: 0;
@@ -107,7 +109,8 @@ $panel-hover-offset: 1em;
   }
 }
 
-//This is for the three panels in the "stories" section tabs
+// THUMB PANEL GROUP STORIES
+// This is for the three panels in the "stories" section tabs
 .thumb-panel-group-stories {
   height: $stories-panel-height;
   max-height: $stories-panel-max-height;
@@ -124,7 +127,8 @@ $panel-hover-offset: 1em;
         bottom: -$panel-hover-offset;
         left: -$panel-hover-offset;
         border-radius: #{$panel-hover-offset * 0.25};
-        transition: all 0.3s $cubic;
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
+        transition: all 0.5s $helium;
         z-index: 2;
       }
       .thumb-upper {
@@ -241,71 +245,14 @@ $panel-hover-offset: 1em;
   height: $difference-panel-height;
   max-height: $difference-panel-max-height;
 
-  // Changes the occur when hovering "thumb-panel-group-difference"
-  // It changes the active thumb to white, and the hovered thumb to blue
-  // &:hover {
-  //
-  //   // Changing the panel-thumb back to white
-  //   .panel-thumb.active {
-  //     .panel-thumb-inner {
-  //       background-color: white !important;
-  //       height: 100% !important;
-  //       width: 100% !important;
-  //       position: absolute;
-  //       top: 0;
-  //       right: 0;
-  //       bottom: 0;
-  //       left: 0;
-  //       z-index: 0;
-  //       transition: all 0.3s $cubic;
-  //       overflow: hidden;
-  //     }
-  //     h6, h3 {
-  //       color: $brand-primary !important;
-  //     }
-  //     polygon {
-  //       fill: $gray-light !important;
-  //     }
-  //
-  //     // Except when hovering the active panel
-  //     // This will persist it remaining active
-  //     &:hover {
-  //       .panel-thumb-inner {
-  //         background-color: $brand-primary !important;
-  //         height: calc(100% + #{$panel-hover-offset * 2}) !important;
-  //         width: calc(100% + #{$panel-hover-offset * 2}) !important;
-  //         top: -$panel-hover-offset;
-  //         right: -$panel-hover-offset;
-  //         bottom: -$panel-hover-offset;
-  //         left: -$panel-hover-offset;
-  //         border-radius: #{$panel-hover-offset * 0.25};
-  //         transition: all 0.3s $cubic;
-  //         z-index: 1;
-  //       }
-  //       h6, h3 {
-  //         color: white !important;
-  //       }
-  //       polygon {
-  //         fill: white !important;
-  //       }
-  //     }
-  //   }
-  // }
-
   // "panel-thumb" for "thumb-panel-group-difference"
   .panel-thumb {
     list-style: none;
 
     &:hover {
-      // .panel-thumb-inner {
-      //   background-color: $brand-primary;
-      // }
-      // h6, h3 {
-      //   color: white;
-      // }
       polygon {
-        // fill: white !important;
         transform: translateY(10px);
+        transition: all 0.5s $helium;
       }
     }
 
@@ -320,6 +267,7 @@ $panel-hover-offset: 1em;
     }
     svg {
       overflow: visible;
+      margin-top: 0.75em;
     }
     polygon {
       fill: $gray-light !important;
@@ -337,7 +285,8 @@ $panel-hover-offset: 1em;
         bottom: -$panel-hover-offset;
         left: -$panel-hover-offset;
         border-radius: #{$panel-hover-offset * 0.25};
-        transition: all 0.3s $cubic;
+        transition: all 0.5s $helium;
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
         z-index: 1;
       }
       h6, h3 {
@@ -352,6 +301,7 @@ $panel-hover-offset: 1em;
     &:active {
       polygon {
         transform: translateY(12px);
+        transition: all 0.2s $helium;
       }
     }
   }

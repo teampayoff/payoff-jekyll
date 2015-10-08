@@ -31,6 +31,22 @@ body {
   }
 }
 
+.nav .dropdown.open {
+  a:focus {
+    background: transparent;
+  }
+}
+.navbar-naked .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a {
+  background: transparent;
+}
+
+
+
+.navbar-nav>li>.dropdown-menu {
+  border-radius: $border-radius-base;
+}
+
+
 
 // Footer
 // --------------------------------------------------

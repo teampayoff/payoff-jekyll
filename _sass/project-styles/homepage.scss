@@ -62,141 +62,6 @@ $panel-hover-offset: 1em;
   margin: 0;
   padding: 0;
 
-  &-stories {
-    height: $stories-panel-height;
-    max-height: $stories-panel-max-height;
-
-
-    .panel-thumb {
-
-      &:nth-child(1) {
-        .panel-thumb-inner {
-          background-color: rgba($brand-primary, 1);
-        }
-        h6 {
-          color: $brand-primary;
-        }
-      }
-
-      &:nth-child(2) {
-        .panel-thumb-inner {
-          background-color: rgba($brand-pink, 1);
-        }
-        h6 {
-          color: $brand-pink;
-        }
-      }
-
-      &:nth-child(3) {
-        .panel-thumb-inner {
-          background-color: rgba($brand-orange, 1);
-        }
-        h6 {
-          color: $brand-orange;
-        }
-      }
-    }
-  }
-
-  &-difference {
-    height: $difference-panel-height;
-    max-height: $difference-panel-max-height;
-
-    &:hover {
-      .panel-thumb.active {
-        .panel-thumb-inner {
-          background-color: white !important;
-          height: 100% !important;
-          width: 100% !important;
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 0;
-          transition: all 0.3s $cubic;
-          overflow: hidden;
-        }
-        h6, h3 {
-          color: $brand-primary !important;
-        }
-        &:hover {
-          .panel-thumb-inner {
-            background-color: $brand-primary !important;
-            height: calc(100% + #{$panel-hover-offset * 2}) !important;
-            width: calc(100% + #{$panel-hover-offset * 2}) !important;
-            top: -$panel-hover-offset;
-            right: -$panel-hover-offset;
-            bottom: -$panel-hover-offset;
-            left: -$panel-hover-offset;
-            border-radius: #{$panel-hover-offset * 0.25};
-            transition: all 0.3s $cubic;
-            z-index: 1;
-          }
-          h6, h3 {
-            color: white !important;
-          }
-        }
-      }
-    }
-
-    .panel-thumb {
-      list-style: none;
-
-      &:hover {
-        .panel-thumb-inner {
-          background-color: $brand-primary;
-        }
-        h6, h3 {
-          color: white;
-        }
-      }
-
-      .panel-thumb-inner {
-        background-color: white;
-      }
-      h6, h3 {
-        color: $brand-primary;
-      }
-      &.active {
-
-        .panel-thumb-inner {
-          background-color: $brand-primary;
-          height: calc(100% + #{$panel-hover-offset * 2});
-          width: calc(100% + #{$panel-hover-offset * 2});
-          top: -$panel-hover-offset;
-          right: -$panel-hover-offset;
-          bottom: -$panel-hover-offset;
-          left: -$panel-hover-offset;
-          border-radius: #{$panel-hover-offset * 0.25};
-          transition: all 0.3s $cubic;
-          z-index: 1;
-        }
-        h6, h3 {
-          color: white;
-        }
-      }
-    }
-
-    .thumb-text-center {
-      width: 100%;
-      height: 100%;
-      display: inline-table;
-      position: relative;
-      transition: all 0.4s $cubic;
-      z-index: 3;
-
-      span {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        h6, h3 {
-
-        }
-      }
-    }
-  }
-
   .panel-thumb  {
     height: 100%;
     border: none;
@@ -204,52 +69,6 @@ $panel-hover-offset: 1em;
     border-radius: 0;
     margin: 0;
     padding: 0;
-
-    &:hover {
-
-      .panel-thumb-inner {
-        height: calc(100% + #{$panel-hover-offset * 2});
-        width: calc(100% + #{$panel-hover-offset * 2});
-        top: -$panel-hover-offset;
-        right: -$panel-hover-offset;
-        bottom: -$panel-hover-offset;
-        left: -$panel-hover-offset;
-        border-radius: #{$panel-hover-offset * 0.25};
-        transition: all 0.3s $cubic;
-        z-index: 2;
-      }
-      .thumb-upper {
-        height: ($stories-panel-height * 0.6);
-        max-height: ($stories-panel-max-height * 0.6);
-      }
-      .thumb-lower {
-        height: calc(#{($stories-panel-height * 0.4)} + #{$panel-hover-offset * 2});
-        max-height: calc(#{($stories-panel-max-height * 0.4)} + #{$panel-hover-offset * 2});
-
-        h6 {
-          color: white;
-          margin: (($stories-panel-height * 0.16) / 1.5) 0 1.5em;
-        }
-      }
-      .thumb-text-center {
-
-      }
-      &:nth-child(1) {
-        .thumb-lower {
-          background-color: $brand-primary;
-        }
-      }
-      &:nth-child(2) {
-        .thumb-lower {
-          background-color: $brand-pink;
-        }
-      }
-      &:nth-child(3) {
-        .thumb-lower {
-          background-color: $brand-orange;
-        }
-      }
-    }
 
     &-inner {
       background-color: rgba($brand-primary, 1);
@@ -285,6 +104,43 @@ $panel-hover-offset: 1em;
       display: block;
       z-index: 1;
     }
+  }
+}
+
+//This is for the three panels in the "stories" section tabs
+.thumb-panel-group-stories {
+  height: $stories-panel-height;
+  max-height: $stories-panel-max-height;
+
+  // "panel-thumb" for "thumb-panel-group-difference"
+  .panel-thumb {
+
+    &:hover {
+      .panel-thumb-inner {
+        height: calc(100% + #{$panel-hover-offset * 2});
+        width: calc(100% + #{$panel-hover-offset * 2});
+        top: -$panel-hover-offset;
+        right: -$panel-hover-offset;
+        bottom: -$panel-hover-offset;
+        left: -$panel-hover-offset;
+        border-radius: #{$panel-hover-offset * 0.25};
+        transition: all 0.3s $cubic;
+        z-index: 2;
+      }
+      .thumb-upper {
+        height: ($stories-panel-height * 0.6);
+        max-height: ($stories-panel-max-height * 0.6);
+      }
+      .thumb-lower {
+        height: calc(#{($stories-panel-height * 0.4)} + #{$panel-hover-offset * 2});
+        max-height: calc(#{($stories-panel-max-height * 0.4)} + #{$panel-hover-offset * 2});
+
+        h6 {
+          color: white;
+          margin: (($stories-panel-height * 0.16) / 1.5) 0 1.5em;
+        }
+      }
+    }
 
     .thumb-upper {
       width: 100%;
@@ -302,7 +158,6 @@ $panel-hover-offset: 1em;
         width: 100%;
         margin: 0;
         padding: 0 !important;
-
       }
     }
 
@@ -332,6 +187,191 @@ $panel-hover-offset: 1em;
       text-align: center;
       max-width: 25vw;
       margin: 0 auto;
+    }
+
+    &:hover {
+      &:nth-child(1) {
+        .thumb-lower {
+          background-color: $brand-primary;
+        }
+      }
+      &:nth-child(2) {
+        .thumb-lower {
+          background-color: $brand-pink;
+        }
+      }
+      &:nth-child(3) {
+        .thumb-lower {
+          background-color: $brand-orange;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      .panel-thumb-inner {
+        background-color: rgba($brand-primary, 1);
+      }
+      h6 {
+        color: $brand-primary;
+      }
+    }
+
+    &:nth-child(2) {
+      .panel-thumb-inner {
+        background-color: rgba($brand-pink, 1);
+      }
+      h6 {
+        color: $brand-pink;
+      }
+    }
+
+    &:nth-child(3) {
+      .panel-thumb-inner {
+        background-color: rgba($brand-orange, 1);
+      }
+      h6 {
+        color: $brand-orange;
+      }
+    }
+  }
+}
+
+//This is for the two panels in the "Difference" section tabs
+.thumb-panel-group-difference {
+  height: $difference-panel-height;
+  max-height: $difference-panel-max-height;
+
+  // Changes the occur when hovering "thumb-panel-group-difference"
+  // It changes the active thumb to white, and the hovered thumb to blue
+  // &:hover {
+  //
+  //   // Changing the panel-thumb back to white
+  //   .panel-thumb.active {
+  //     .panel-thumb-inner {
+  //       background-color: white !important;
+  //       height: 100% !important;
+  //       width: 100% !important;
+  //       position: absolute;
+  //       top: 0;
+  //       right: 0;
+  //       bottom: 0;
+  //       left: 0;
+  //       z-index: 0;
+  //       transition: all 0.3s $cubic;
+  //       overflow: hidden;
+  //     }
+  //     h6, h3 {
+  //       color: $brand-primary !important;
+  //     }
+  //     polygon {
+  //       fill: $gray-light !important;
+  //     }
+  //
+  //     // Except when hovering the active panel
+  //     // This will persist it remaining active
+  //     &:hover {
+  //       .panel-thumb-inner {
+  //         background-color: $brand-primary !important;
+  //         height: calc(100% + #{$panel-hover-offset * 2}) !important;
+  //         width: calc(100% + #{$panel-hover-offset * 2}) !important;
+  //         top: -$panel-hover-offset;
+  //         right: -$panel-hover-offset;
+  //         bottom: -$panel-hover-offset;
+  //         left: -$panel-hover-offset;
+  //         border-radius: #{$panel-hover-offset * 0.25};
+  //         transition: all 0.3s $cubic;
+  //         z-index: 1;
+  //       }
+  //       h6, h3 {
+  //         color: white !important;
+  //       }
+  //       polygon {
+  //         fill: white !important;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // "panel-thumb" for "thumb-panel-group-difference"
+  .panel-thumb {
+    list-style: none;
+
+    &:hover {
+      // .panel-thumb-inner {
+      //   background-color: $brand-primary;
+      // }
+      // h6, h3 {
+      //   color: white;
+      // }
+      polygon {
+        // fill: white !important;
+        transform: translateY(10px);
+      }
+    }
+
+    .panel-thumb-inner {
+      background-color: white;
+    }
+    h6 {
+      color: $gray-light;
+    }
+    h3 {
+      color: $brand-primary;
+    }
+    svg {
+      overflow: visible;
+    }
+    polygon {
+      fill: $gray-light !important;
+      transition: all 0.3s $cubic;
+      transform: translateY(0);
+    }
+    &.active {
+
+      .panel-thumb-inner {
+        background-color: $brand-primary;
+        height: calc(100% + #{$panel-hover-offset * 2});
+        width: calc(100% + #{$panel-hover-offset * 2});
+        top: -$panel-hover-offset;
+        right: -$panel-hover-offset;
+        bottom: -$panel-hover-offset;
+        left: -$panel-hover-offset;
+        border-radius: #{$panel-hover-offset * 0.25};
+        transition: all 0.3s $cubic;
+        z-index: 1;
+      }
+      h6, h3 {
+        color: white;
+      }
+      polygon {
+        fill: white !important;
+        transform: translateY(10px);
+      }
+    }
+
+    &:active {
+      polygon {
+        transform: translateY(12px);
+      }
+    }
+  }
+
+  .thumb-text-center {
+    width: 100%;
+    height: 100%;
+    display: inline-table;
+    position: relative;
+    transition: all 0.4s $cubic;
+    z-index: 3;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      overflow: visible;
+      h6, h3 {
+
+      }
     }
   }
 }

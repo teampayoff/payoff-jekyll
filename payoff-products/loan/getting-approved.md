@@ -5,7 +5,7 @@ permalink: /payoff-products/loan/getting-approved/
 heading: The Payoff Loan&trade;
 parent: loan
 subnav: loan
-weight: 3
+weight: 4
 ---
 
 
@@ -35,4 +35,3 @@ weight: 3
 
 
 </section>
-

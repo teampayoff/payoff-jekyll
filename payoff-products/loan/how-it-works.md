@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: product-page
 title: How It Works
 permalink: /payoff-products/loan/how-it-works/
 heading: The Payoff Loan&trade;

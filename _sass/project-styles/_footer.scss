@@ -1,59 +1,13 @@
-// Base layout mod
-// --------------------------------------------------
-
-html {
-  background-color: rgba($gray, .05);
-}
-
-body {
-  max-width: $global-max-width;
-  background-color: white;
-  margin: 0 auto;
-  position: relative;
-}
-
-.container-fluid > .row, .tab-pane > .row {
-  margin: 0;
-}
-
-.navbar {
-
-  .nav > li > a {
-    padding: 13px 0;
-  }
-
-  .nav > li {
-    padding-left: 20px;
-  }
-
-  .navbar-btn-group > li:nth-child(2) {
-    padding-left: 15px;
-  }
-}
-
-.nav .dropdown.open {
-  a:focus {
-    background: transparent;
-  }
-}
-.navbar-naked .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a {
-  background: transparent;
-}
-
-
-
-.navbar-nav>li>.dropdown-menu {
-  border-radius: $border-radius-base;
-}
-
-
-
 // Footer
 // --------------------------------------------------
 
 footer {
-  background-color: rgba($gray-lighter, .5);
-  padding: $spacer-y-xl 0;
+  background-color: rgba($gray-lighter, .75);
+  padding: $spacer-y-xl (($navbar-padding-horizontal * 1.75) / 2);
+
+  @media (min-width: $screen-md) {
+    padding: $spacer-y-xl 0;
+  }
 }
 
 .footer .foot-col {
@@ -82,6 +36,10 @@ footer {
 
 .footer .foot-lower {
   padding-top: $spacer-y-lg;
+}
+
+.footer .navbar-brand {
+  height: 65px;
 }
 
 .footer img.trust {

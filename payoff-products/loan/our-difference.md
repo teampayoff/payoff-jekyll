@@ -5,7 +5,7 @@ permalink: /payoff-products/loan/our-difference/
 heading: The Payoff Loan&trade;
 parent: loan
 subnav: loan
-weight: 4
+weight: 2
 ---
 
 
@@ -39,4 +39,3 @@ weight: 4
 
 
 </section>
-

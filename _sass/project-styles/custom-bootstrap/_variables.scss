@@ -12,7 +12,7 @@ $black:                     #22272c !default;
 $gray-dark:                 #72767a !default;
 $gray:                      #a2a5a8 !default;
 $gray-light:                #d5d7d9 !default;
-$gray-lighter:              #e8e8e8 !default;
+$gray-lighter:              #fafafa !default;
 
 $brand-primary:             #00c3ff !default;
 $brand-success:             #5cb85c !default;
@@ -183,6 +183,10 @@ $btn-default-border:             #ccc !default;
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+$btn-action-color:              #fff !default;
+$btn-action-bg:                 $brand-pink !default;
+$btn-action-border:             darken($btn-action-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
@@ -906,5 +910,6 @@ $hr-border:                   $gray-lighter !default;
 
 
 
-$cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
-$helium: cubic-bezier(0.575, 0.005, 0.000, 1.645);
+$cubic: cubic-bezier(0.215, 0.61, 0.355, 1); //ease-out-cubic
+$helium: cubic-bezier(0.575, 0.005, 0.000, 1.645); //curve-with-spring
+$helium-test: cubic-bezier(0.175, 0.885, 0.32, 1.275); //curve-with-spring

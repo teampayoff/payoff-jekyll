@@ -1,0 +1,170 @@
+// Nav Styles
+// --------------------------------------------------
+
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (min-width: $screen-sm) {
+    // overflow-y: hidden;
+    height: 6.25rem;
+  }
+
+  &.navbar-default {
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-color: white;
+      width: 50vw;
+      z-index: 9999;
+      border-bottom: 1px solid $navbar-default-border;
+    }
+  }
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 50vw;
+    height: calc(100% + 2px);
+    z-index: 9999;
+    transition: all .2s $cubic;
+    border-bottom: 1px solid transparent;
+  }
+
+  &::before {
+    right: -50vw;
+  }
+
+  &::after {
+    left: -50vw;
+  }
+
+  .navbar-header {
+    z-index: 3;
+  }
+
+  .nav > li > a {
+    padding: 1rem 0;
+
+    @media (min-width: $screen-sm) {
+      padding: 2.1rem 0;
+    }
+  }
+
+  .nav > li {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $screen-sm) {
+    .navbar-btn {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .navbar-btn-group > li:nth-child(2) {
+      padding-left: 15px;
+    }
+  }
+
+  .navbar-brand {
+    height: 6.25rem;
+    padding: (6.25rem / 8) 0 ;
+  }
+
+}
+
+.navbar-toggle {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav .dropdown.open {
+  a:focus {
+    background: transparent;
+  }
+}
+
+.navbar-naked .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a {
+  background: transparent;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  border-radius: $border-radius-base;
+}
+
+.page-nav-outer {
+  display: none;
+  height: 6.25rem;
+  overflow-y: hidden;
+  position: absolute;
+  z-index: -1;
+
+  @media (min-width: $screen-sm) {
+    display: block;
+  }
+}
+
+.page-nav-inner {
+  width: 100%;
+  height: 6.25rem;
+  display: block;
+  transition: all .2s $cubic;
+}
+
+@media (min-width: $screen-sm) {
+
+  .main-nav {
+    transition: all .2s $cubic;
+
+    &.nav-down {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &.nav-up {
+      opacity: 0;
+      transform: translateY(-6.25rem);
+    }
+  }
+
+  .page-nav-inner {
+    visibility: visible;
+    z-index: -1;
+  }
+
+  .page-nav-outer {
+
+    &.nav-down {
+      .page-nav-inner {
+        opacity: 0;
+        transform: translateY(6.25rem);
+      }
+    }
+
+    &.nav-up {
+      z-index: 1;
+
+      .page-nav-inner {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .page-nav-list {
+      // margin-left: 3rem;
+      // transform: translatey(12px);
+      li:first-child {
+        padding-left: 0
+      }
+    }
+
+    .navbar-right {
+      position: absolute;
+      right: 8.25rem;
+      // right: 0;
+    }
+  }
+}

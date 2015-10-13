@@ -1,0 +1,32 @@
+{% if page.parent == "payoff-products" %}
+
+	<div class="page-nav-outer col-sm-11 col-sm-offset-1 nav-down" id="pagenav">
+		<div class="page-nav-inner">
+
+			<ul class="nav navbar-nav page-nav-list">
+
+				<li class="nav-item">
+					<h4>{{ page.title }}</h4>
+				</li>
+
+				{% for weight in (1..10) %}
+					{% for p in site.pages %}
+						{% if p.parent == 'loan' %}
+							{% if p.weight == weight %}
+							<li class="nav-item{% if p.url == page.url %} active{% endif %}">
+								<a class="nav-link" href="#{{ p.title | downcase | replace:' ','-' | remove:'&' }}">{{ p.title }}</a>
+							</li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			</ul>
+
+			<ul class="nav navbar-nav navbar-btn-group navbar-right">
+				<li class="nav-item"><button type="button" class="btn btn-action navbar-btn">Apply Now</button></li>
+			</ul>
+
+		</div>
+	</div>
+
+{% endif %}

@@ -1,0 +1,21 @@
+// Base layout mod
+// --------------------------------------------------
+
+html {
+  background-color: $gray-lighter;
+}
+
+body {
+  max-width: $global-max-width;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-fluid > .row, .tab-pane > .row {
+  margin: 0;
+}
+
+.btn-action {
+  @include button-variant($btn-action-color, $btn-action-bg, $btn-action-border);
+}

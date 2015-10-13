@@ -404,6 +404,10 @@
   background-color: white;
   // border-color: $navbar-default-border;
 
+  @media (min-width: $screen-sm) {
+    background-color: transparent;
+  }
+
   .navbar-brand {
     color: $navbar-default-brand-color;
     &:hover,

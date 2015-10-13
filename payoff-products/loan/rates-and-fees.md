@@ -5,7 +5,7 @@ permalink: /payoff-products/loan/rates-and-fees/
 heading: The Payoff Loan&trade;
 parent: loan
 subnav: loan
-weight: 1
+weight: 3
 ---
 
 

@@ -9,17 +9,12 @@
 					<h4>{{ page.title }}</h4>
 				</li>
 
-				{% for weight in (1..10) %}
-					{% for p in site.pages %}
-						{% if p.parent == 'loan' %}
-							{% if p.weight == weight %}
-							<li class="nav-item{% if p.url == page.url %} active{% endif %}">
-								<a class="nav-link" href="#{{ p.title | downcase | replace:' ','-' | remove:'&' }}">{{ p.title }}</a>
-							</li>
-							{% endif %}
-						{% endif %}
-					{% endfor %}
+				{% for item in page.sections %}
+					<li class="nav-item">
+						<a class="nav-link" href="#{{ item | downcase | replace:' ','-' | remove:'&' }}">{{ item }}</a>
+					</li>
 				{% endfor %}
+
 			</ul>
 
 			<ul class="nav navbar-nav navbar-btn-group navbar-right">

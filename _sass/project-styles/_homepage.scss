@@ -73,8 +73,9 @@
 // THUMB PANEL VARIABLES
 $stories-panel-height: 60vh;
 $stories-panel-max-height: 60vw;
-$difference-panel-height: 20vh;
-$difference-panel-max-height: 20vw;
+$difference-panel-min-height: 15vw;
+$difference-panel-height: 15vh;
+$difference-panel-max-height: 30vw;
 $panel-hover-offset: 1em;
 
 // THUMB PANEL GROUP MASTER
@@ -145,7 +146,7 @@ $panel-hover-offset: 1em;
         right: -$panel-hover-offset;
         bottom: -$panel-hover-offset;
         left: -$panel-hover-offset;
-        border-radius: #{$panel-hover-offset * 0.25};
+        border-radius: $border-radius-base;
         box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
         transition: all 0.5s $helium;
         z-index: 2;
@@ -267,10 +268,12 @@ $panel-hover-offset: 1em;
 
 //This is for the two panels in the "Difference" section tabs
 .thumb-panel-group-difference {
+  min-height: $difference-panel-min-height * 2;
   height: ($difference-panel-height * 2);
   max-height: ($difference-panel-max-height * 2);
 
   @media (min-width: $screen-sm) {
+    min-height: $difference-panel-min-height;
     height: $difference-panel-height;
     max-height: $difference-panel-max-height;
   }
@@ -314,7 +317,7 @@ $panel-hover-offset: 1em;
         right: -$panel-hover-offset;
         bottom: -$panel-hover-offset;
         left: -$panel-hover-offset;
-        border-radius: #{$panel-hover-offset * 0.25};
+        border-radius: $border-radius-base;
         transition: all 0.5s $helium;
         box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
         z-index: 1;

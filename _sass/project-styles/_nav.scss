@@ -2,6 +2,59 @@
 // --------------------------------------------------
 
 
+.dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s $cubic;
+
+  @media (min-width: $screen-sm) {
+    margin-top: -2em !important;
+  }
+}
+
+.dropdown.open>.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s $helium;
+
+  @media (min-width: $screen-sm) {
+    margin-top: -0.75em !important;
+  }
+}
+
+.main-nav .navbar-btn-group {
+  margin-bottom: 2em;
+  @media (min-width: $screen-sm) {
+    margin-bottom: 0;
+  }
+}
+
+.dropdown.open {
+  overflow-x: visible;
+}
+
+.collapse.in {
+  overflow-x: visible;
+  .nav {
+    overflow-x: visible;
+  }
+  .dropdown-menu {
+    padding: 1em 0;
+    border-radius: $border-radius-base;
+    background-color: $gray-lighter;
+    margin: 0 -1.75em;
+  }
+}
+
+.navbar-naked .collapse.in, .navbar-naked .collapsing {
+  border-bottom: 1px solid $navbar-default-border;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 100vh;
+}
+
 .navbar {
   padding-top: 0;
   padding-bottom: 0;

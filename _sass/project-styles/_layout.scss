@@ -16,6 +16,13 @@ body {
   margin: 0;
 }
 
+.outer {
+  overflow-x: hidden;
+  @media (min-width: $global-max-width) {
+    overflow-x: visible;
+  }
+}
+
 .btn-action {
   @include button-variant($btn-action-color, $btn-action-bg, $btn-action-border);
 }

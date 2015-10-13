@@ -1,0 +1,42 @@
+// Button Mod
+// --------------------------------------------------
+
+.btn {
+  //custom styles
+
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      //custom styles
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    //custom styles
+  }
+
+  &:active,
+  &.active {
+    //custom styles
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    //custom styles
+  }
+
+  // [converter] extracted a& to a.btn
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    //custom styles
+  }
+}

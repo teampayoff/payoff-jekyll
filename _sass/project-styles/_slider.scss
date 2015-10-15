@@ -1,5 +1,11 @@
 .slick-slider {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
 
+  &:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+  }
 
   &.slick-images {
     min-height: 45vw;
@@ -31,10 +37,24 @@
     z-index: 2;
   }
 
+  .slick-prev, .slick-next {
+    height: 100%;
+    color: transparent;
+    width: 4em;
+    -webkit-appearance: none;
+    background: rgba(0,0,0,.1);
+    border: 0;
+
+    &:focus, &:active {
+      outline: 0;
+    }
+  }
+
   .slick-prev {
     left: 0;
     bottom: 0;
   }
+
   .slick-next {
     right: 0;
     bottom: 0;

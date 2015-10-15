@@ -1,75 +1,6 @@
 // Homepage
 // --------------------------------------------------
 
-.hero {
-  margin: 0;
-  position: relative;
-  display: inline-table;
-  width: 100%;
-
-  &-page {
-    min-height: 25vw;
-    height: 40vh;
-    max-height: 40vh;
-
-    @media (min-width: 1400px) {
-      min-height: 20vw;
-      height: 35vh;
-      max-height: 35vh;
-    }
-  }
-
-  &-home {
-    min-height: 55vw;
-    height: 70vh;
-    max-height: 70vh;
-
-    @media (min-width: 1400px) {
-      min-height: 50vw;
-      height: 65vh;
-      max-height: 65vh;
-    }
-  }
-
-  &-section {
-    min-height: 50vw;
-    height: 65vh;
-    max-height: 65vh;
-
-    @media (min-width: 1400px) {
-      min-height: 45vw;
-      height: 60vh;
-      max-height: 60vh;
-    }
-  }
-
-  span.hero-copy {
-    display: table-cell;
-    vertical-align: middle;
-
-    &.narrow {
-      width: 100%;
-
-      @media (min-width: $screen-sm) {
-        width: 75%;
-      }
-      @media (min-width: $screen-md) {
-        width: 50%;
-      }
-    }
-  }
-
-  h1 {
-    font-weight: 300;
-    height: auto;
-  }
-}
-
-.container-hero.container-fluid {
-  padding: 0;
-  margin: 0;
-}
-
 // THUMB PANEL VARIABLES
 $stories-panel-height: 60vh;
 $stories-panel-max-height: 60vw;
@@ -132,8 +63,51 @@ $panel-hover-offset: 1em;
 // THUMB PANEL GROUP STORIES
 // This is for the three panels in the "stories" section tabs
 .thumb-panel-group-stories {
-  height: $stories-panel-height;
-  max-height: $stories-panel-max-height;
+  height: ($stories-panel-height * 2.5);
+  max-height: ($stories-panel-max-height * 2.5);
+  z-index: 1;
+
+  .slick-track {
+    height: ($stories-panel-height * 2.5);
+    max-height: ($stories-panel-max-height * 2.5);
+  }
+
+  @media (min-width: $screen-xs) {
+    height: ($stories-panel-height * 1.5);
+    max-height: ($stories-panel-max-height * 1.5);
+
+    .slick-track {
+      height: ($stories-panel-height * 1.5);
+      max-height: ($stories-panel-max-height * 1.5);
+    }
+  }
+  @media (min-width: $screen-sm) {
+    height: ($stories-panel-height * 1.25);
+    max-height: ($stories-panel-max-height * 1.25);
+
+    .slick-track {
+      height: ($stories-panel-height * 1.25);
+      max-height: ($stories-panel-max-height * 1.25);
+    }
+  }
+  @media (min-width: $screen-md) {
+    height: $stories-panel-height;
+    max-height: $stories-panel-max-height;
+
+    .slick-track {
+      height: $stories-panel-height;
+      max-height: $stories-panel-max-height;
+    }
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
 
   // "panel-thumb" for "thumb-panel-group-difference"
   .panel-thumb {
@@ -152,24 +126,25 @@ $panel-hover-offset: 1em;
         z-index: 2;
       }
       .thumb-upper {
-        height: ($stories-panel-height * 0.6);
-        max-height: ($stories-panel-max-height * 0.6);
+        height: 50%;
       }
       .thumb-lower {
-        height: calc(#{($stories-panel-height * 0.4)} + #{$panel-hover-offset * 2});
-        max-height: calc(#{($stories-panel-max-height * 0.4)} + #{$panel-hover-offset * 2});
+        height: 50%;
+
+        .thumb-text-wrap {
+          height: auto;
+        }
 
         h6 {
           color: white;
-          margin: (($stories-panel-height * 0.16) / 1.5) 0 1.5em;
+          padding: 18% 0 1.5em;
         }
       }
     }
 
     .thumb-upper {
       width: 100%;
-      height: ($stories-panel-height * 0.84);
-      max-height: ($stories-panel-max-height * 0.84);
+      height: 75%;
       display: inline-table;
       transition: all 0.4s $cubic;
 
@@ -186,37 +161,45 @@ $panel-hover-offset: 1em;
     }
 
     .thumb-lower {
-
-      @media (min-width: $screen-md) {
-        height: ($stories-panel-height * 0.16);
-        max-height: ($stories-panel-max-height * 0.16);
-      }
-
-      position: absolute;
-      bottom: 0;
-      left: -10px;
-      right: -10px;
       background-color: white;
-      width: calc(100% + 20px);
-      height: ($stories-panel-height * 0.276);
-      max-height: ($stories-panel-max-height * 0.276);
+      width: 100%;
+      height: calc(25% + 1px);
       transition: all 0.4s $cubic;
       overflow: hidden;
 
+      .thumb-text-wrap {
+        text-align: center;
+        width: 66vw;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        @media (min-width: $screen-xs) {
+          width: 50vw;
+        }
+        @media (min-width: $screen-sm) {
+          width: 40vw;
+        }
+        @media (min-width: $screen-md) {
+          width: 30vw;
+        }
+        @media (min-width: $screen-lg) {
+          width: 25vw;
+          max-width: 35vh;
+        }
+      }
+
       h6 {
-        margin: (($stories-panel-height * 0.16) / 2.2) 0;
+        margin: 0;
+        padding: calc(25% - #{($font-size-h6 * 2)}) 0;
         transition: all 0.4s $cubic;
+        position: relative;
+        height: 100%;
       }
 
       p, a {
         color: white;
       }
-    }
-
-    .thumb-lower .thumb-text-wrap {
-      text-align: center;
-      max-width: 25vw;
-      margin: 0 auto;
     }
 
     &:hover {
@@ -268,15 +251,15 @@ $panel-hover-offset: 1em;
 
 //This is for the two panels in the "Difference" section tabs
 .thumb-panel-group-difference {
-  min-height: $difference-panel-min-height * 2;
-  height: ($difference-panel-height * 2);
-  max-height: ($difference-panel-max-height * 2);
-
-  @media (min-width: $screen-sm) {
-    min-height: $difference-panel-min-height;
-    height: $difference-panel-height;
-    max-height: $difference-panel-max-height;
-  }
+  // min-height: $difference-panel-min-height * 2;
+  // height: ($difference-panel-height * 2);
+  // max-height: ($difference-panel-max-height * 2);
+  //
+  // @media (min-width: $screen-sm) {
+  //   min-height: $difference-panel-min-height;
+  //   height: $difference-panel-height;
+  //   max-height: $difference-panel-max-height;
+  // }
 
   // "panel-thumb" for "thumb-panel-group-difference"
   .panel-thumb {
@@ -353,8 +336,11 @@ $panel-hover-offset: 1em;
       vertical-align: middle;
       text-align: center;
       overflow: visible;
-      h6, h3 {
-
+      h3 {
+        display: none;
+        @media (min-width: $screen-sm) {
+          display: block;
+        }
       }
     }
   }

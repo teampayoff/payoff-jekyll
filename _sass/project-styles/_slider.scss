@@ -1,0 +1,42 @@
+.slick-slider {
+
+
+  &.slick-images {
+    min-height: 45vw;
+    height: 60vh;
+    max-height: 60vh;
+    position: relative;
+
+    @media (min-width: 1400px) {
+      min-height: 50vw;
+      height: 65vh;
+      max-height: 65vh;
+    }
+
+    .slick-list {
+      height: 100%;
+    }
+
+    .slick-track {
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .slick-prev {
+    left: 0;
+    bottom: 0;
+  }
+  .slick-next {
+    right: 0;
+    bottom: 0;
+  }
+}

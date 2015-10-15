@@ -1,0 +1,84 @@
+.hero {
+  margin: 0;
+  position: relative;
+  display: inline-table;
+  width: 100%;
+
+  &-page {
+    min-height: 25vw;
+    height: 40vh;
+    max-height: 40vh;
+
+    @media (min-width: 1400px) {
+      min-height: 20vw;
+      height: 35vh;
+      max-height: 35vh;
+    }
+  }
+
+  &-home {
+    min-height: 55vw;
+    height: 70vh;
+    max-height: 70vh;
+
+    @media (min-width: 1400px) {
+      min-height: 50vw;
+      height: 65vh;
+      max-height: 65vh;
+    }
+  }
+
+  &-section {
+    min-height: 50vw;
+    height: 65vh;
+    max-height: 65vh;
+
+    @media (min-width: 1400px) {
+      min-height: 45vw;
+      height: 60vh;
+      max-height: 60vh;
+    }
+
+    // HOMEPAGE DIFFERENCE SECTION
+    &__difference {
+      background: rgba($brand-primary, .1);
+      span {
+        // color: white;
+      }
+    }
+
+    &__brand-primary {
+      background: rgba($brand-primary, 1);
+      span {
+        color: white;
+      }
+    }
+  }
+
+  span.hero-copy {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1em;
+
+    &.narrow {
+      width: 100%;
+
+      @media (min-width: $screen-sm) {
+        width: 75%;
+      }
+      @media (min-width: $screen-md) {
+        width: 50%;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    height: auto;
+  }
+}
+
+.container-flush.container-fluid {
+  padding: 0;
+  margin: 0;
+}

@@ -68,17 +68,17 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-root:          14px;
+// $font-size-root:          14px;
 $font-unit:               0rem; // Pick em or rem here
 
-$font-size-base:          14px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-lg:               1.25rem !default;
-$font-size-sm:               .85rem !default;
-$font-size-xs:               .75rem !default;
-$font-size-xxs:              .65rem !default;
+// $font-size-lg:               1.25rem !default;
+// $font-size-sm:               .85rem !default;
+// $font-size-xs:               .75rem !default;
+// $font-size-xxs:              .65rem !default;
 
 $font-size-h1:            floor(($font-size-base * 3)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.25)) !default; // ~30px
@@ -180,35 +180,41 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
+$btn-default-color:              $brand-primary !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-border:             $brand-primary !default;
+
+$btn-default-invert-color:       #fff !default;
+$btn-default-invert-bg:          transparent !default;
+$btn-default-invert-border:      #fff !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             $brand-primary !default;
 
-$btn-action-color:              #fff !default;
-$btn-action-bg:                 $brand-pink !default;
-$btn-action-border:             darken($btn-action-bg, 5%) !default;
+$btn-action-color:               #fff !default;
+$btn-action-bg:                  $brand-pink !default;
+$btn-action-border:              $btn-action-bg !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-border:             $btn-success-bg !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-border:                $btn-info-bg !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-border:             $btn-warning-bg !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-border:              $btn-danger-bg !default;
 
 $btn-link-disabled-color:        $gray-light !default;
+
+
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base:         $border-radius-base !default;
@@ -401,7 +407,8 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+
+$navbar-height:                    66px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -427,9 +434,9 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           #fff !default;
+$navbar-default-toggle-icon-bar-bg:        $gray-light !default;
+$navbar-default-toggle-border-color:       $gray-light !default;
 
 
 //=== Inverted navbar

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="container-flush container-fluid">
+  <!-- HERO PAGE -->
+	<section class="row hero hero-page text-center">
+		<span class="hero-copy">
+			<h1>Sub-Page Hero</h1>
+		</span>
+	</section>
+
+	<section class="row hero hero-section hero-section__brand-primary text-center">
+		<span class="hero-copy hero-copy narrow">
+			<h2>Hero Section</h2>
+			<p class="lead">Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+		</span>
+	</section>
+
+	<section class="row hero hero-section hero-section__difference text-center">
+		<span class="hero-copy hero-copy narrow">
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+			<p>
+				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut <a href="#">fermentum massa justo</a> sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non <strong>commodo</strong> luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. <em>Duis mollis,</em> est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+			</p>
+		</span>
+	</section>
+
+	<section class="row">
+		<div class="slick-images">
+
+			{% for item in page.images %}
+				<div>
+					<img src="{{ item }}" alt="" />
+				</div>
+			{% endfor %}
+
+		</div>
+	</section>
+
+
+
+</div>

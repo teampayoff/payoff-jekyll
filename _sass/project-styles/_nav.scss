@@ -61,10 +61,18 @@
 
   @media (min-width: $screen-sm) {
     // overflow-y: hidden;
-    height: 6.25rem;
+    // height: 6.25rem;
+    height: $navbar-height;
+  }
+
+  &.navbar-naked {
+    box-shadow: 0px 0px 0px 0px transparent;
+    border: 0;
   }
 
   &.navbar-default {
+    box-shadow: 0px 3px 0px -2px rgba(0,0,0,0.1);
+    border: 0;
     &::before, &::after {
       content: "";
       position: absolute;
@@ -72,7 +80,10 @@
       background-color: white;
       width: 50vw;
       z-index: 9999;
-      border-bottom: 1px solid $navbar-default-border;
+      box-shadow: 0px 3px 0px -2px rgba(0,0,0,0.1);
+      border: 0;
+
+      // border-bottom: 1px solid $navbar-default-border;
     }
   }
 
@@ -80,20 +91,22 @@
     content: "";
     position: absolute;
     top: 0;
-    background-color: white;
+    // background-color: white;
+    background-color: transparent;
     width: 50vw;
-    height: calc(100% + 2px);
+    // height: calc(100% + 1px);
+    height: 100%;
     z-index: 9999;
     transition: all .2s $cubic;
-    border-bottom: 1px solid transparent;
+    // border-bottom: 1px solid transparent;
   }
 
   &::before {
-    right: -50vw;
+    right: calc(-50vw + 4px);
   }
 
   &::after {
-    left: -50vw;
+    left: calc(-50vw + 4px);
   }
 
   .navbar-header {
@@ -124,8 +137,10 @@
   }
 
   .navbar-brand {
-    height: 6.25rem;
-    padding: (6.25rem / 8) 0 ;
+    // height: 6.25rem;
+    height: $navbar-height;
+    // padding: (6.25rem / 8) 0 ;
+    padding: ($navbar-height / 8) 0;
   }
 
 }
@@ -133,6 +148,23 @@
 .navbar-toggle {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+  border-width: 2px;
+  transition: all 0.3s $cubic;
+  @include button-var($btn-default-color, $btn-default-bg, $btn-default-border);
+
+  &:hover {
+    transition: all 0.3s $cubic;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 3px 0px rgba(0,0,0,0.05);
+  }
+
+  &:active,
+  &.active {
+    //custom styles
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  }
 }
 
 .nav .dropdown.open {
@@ -151,7 +183,7 @@
 
 .page-nav-outer {
   display: none;
-  height: 6.25rem;
+  height: $navbar-height;
   overflow-y: hidden;
   position: absolute;
   z-index: -1;
@@ -163,7 +195,7 @@
 
 .page-nav-inner {
   width: 100%;
-  height: 6.25rem;
+  height: $navbar-height;
   display: block;
   transition: all .2s $cubic;
 }
@@ -180,7 +212,7 @@
 
     &.nav-up {
       opacity: 0;
-      transform: translateY(-6.25rem);
+      transform: translateY(-$navbar-height);
     }
   }
 
@@ -194,7 +226,7 @@
     &.nav-down {
       .page-nav-inner {
         opacity: 0;
-        transform: translateY(6.25rem);
+        transform: translateY($navbar-height);
       }
     }
 
@@ -207,8 +239,6 @@
       }
     }
     .page-nav-list {
-      // margin-left: 3rem;
-      // transform: translatey(12px);
       li:first-child {
         padding-left: 0
       }
@@ -217,7 +247,6 @@
     .navbar-right {
       position: absolute;
       right: 8.25rem;
-      // right: 0;
     }
   }
 }

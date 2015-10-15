@@ -3,7 +3,9 @@
 
 .btn {
   //custom styles
-
+  transition: all 0.2s $cubic;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
+  border-width: 2px;
 
   &,
   &:active,
@@ -11,6 +13,7 @@
     &:focus,
     &.focus {
       //custom styles
+      outline:0;
     }
   }
 
@@ -18,11 +21,25 @@
   &:focus,
   &.focus {
     //custom styles
+    transition: all 0.3s $cubic;
+    outline:0;
+  }
+
+  &:focus {
+    transition: all 0.1s $cubic;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 3px 0px rgba(0,0,0,0.05);
   }
 
   &:active,
   &.active {
     //custom styles
+    transition: all 0.1s $cubic;
+    transform: translateY(0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
   }
 
   &.disabled,
@@ -39,4 +56,34 @@ a.btn {
   fieldset[disabled] & {
     //custom styles
   }
+}
+
+.btn-default {
+  @include button-var($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-default-invert {
+  @include button-var($btn-default-invert-color, $btn-default-invert-bg, $btn-default-invert-border);
+}
+.btn-primary {
+  @include button-var($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+// Success appears as green
+.btn-action {
+  @include button-var($btn-action-color, $btn-action-bg, $btn-action-border);
+}
+// Success appears as green
+.btn-success {
+  @include button-var($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+// Info appears as blue-green
+.btn-info {
+  @include button-var($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+// Warning appears as orange
+.btn-warning {
+  @include button-var($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button-var($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }

@@ -40,23 +40,47 @@
   .slick-prev, .slick-next {
     height: 100%;
     color: transparent;
-    width: 4em;
+    width: 6em;
     -webkit-appearance: none;
-    background: rgba(0,0,0,.1);
+    // background: rgba(0,0,0,.1);
+    background: transparent;
     border: 0;
 
     &:focus, &:active {
       outline: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      border-width: 0;
+      border-color: white;
+      border-style: solid;
+      transform: rotateZ(45deg);
+      height: 16px;
+      width: 16px;
     }
   }
 
   .slick-prev {
     left: 0;
     bottom: 0;
+    &::after {
+      left: calc(50% - 8px);
+      border-left-width: 2px;
+      border-bottom-width: 2px;
+      border-bottom-left-radius: 4px;
+    }
   }
 
   .slick-next {
     right: 0;
     bottom: 0;
+    &::after {
+      right: calc(50% - 8px);
+      border-top-width: 2px;
+      border-right-width: 2px;
+      border-top-right-radius: 4px;
+    }
   }
 }

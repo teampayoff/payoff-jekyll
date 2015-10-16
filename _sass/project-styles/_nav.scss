@@ -1,26 +1,33 @@
 // Nav Styles
 // --------------------------------------------------
 
+.main-nav {
+  .dropdown-menu {
+    @media (min-width: $screen-sm) {
+      margin-top: -2em !important;
+    }
+  }
+  .dropdown.open>.dropdown-menu {
+    @media (min-width: $screen-sm) {
+      margin-top: -0.75em !important;
+    }
+  }
+}
+
+
 
 .dropdown-menu {
   display: block;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s $cubic;
-
-  @media (min-width: $screen-sm) {
-    margin-top: -2em !important;
-  }
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.1);
 }
 
 .dropdown.open>.dropdown-menu {
   opacity: 1;
   visibility: visible;
   transition: all 0.3s $helium;
-
-  @media (min-width: $screen-sm) {
-    margin-top: -0.75em !important;
-  }
 }
 
 .main-nav .navbar-btn-group {

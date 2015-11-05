@@ -1,1 +1,0 @@
-var scrollPoint=$("nav").outerHeight();$(function(){var a=$("#pagenav"),n=$("#nav-open");$(window).scroll(function(){var o=$(window).scrollTop();o>=scrollPoint?(a.removeClass("nav-down").addClass("nav-up"),n.removeClass("nav-down").addClass("nav-up")):(a.removeClass("nav-up").addClass("nav-down"),n.removeClass("nav-up").addClass("nav-down"))})});

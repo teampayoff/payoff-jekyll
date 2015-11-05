@@ -1,1 +1,0 @@
-var navbarHeight=$("nav").outerHeight();$(function(){var a=$("nav");$(window).scroll(function(){var o=$(window).scrollTop();o>=navbarHeight?a.removeClass("navbar-naked").addClass("navbar-default"):a.removeClass("navbar-default").addClass("navbar-naked")})}),$(function(){$('[data-toggle="tooltip"]').tooltip()}),$(function(){$('[data-toggle="popover"]').popover()});
